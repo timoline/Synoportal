@@ -17,7 +17,7 @@ At the moment only a fronten is provided.
 
 Installation
 ------------
-Just copy the Synoportal folder in to the root of your Synology Web folder.
+Just copy the Synoportal folder into the root of your Synology Web folder.
 
 Normally this will be: /volume1/web/
 
@@ -27,4 +27,4 @@ Feel free to help, you are very welcome  !!!
 
 Credits
 -------
-Synoportal is using the css of Twitter Bootstrap: http://twitter.github.com/bootstrap/
+Synoportal is using the css framework of Twitter Bootstrap: http://twitter.github.com/bootstrap/
