@@ -3,12 +3,12 @@ Synoportal
 
 Synoportal is a simpel web portal for the Synology NAS devices.
 Its possible to edit and change links to the diskstation internal websites, like:
-*Disk Station Manager
-*Photo Station
-*Audio Station
-*Headphones
-*NZBget web 
-*etc...
+* Disk Station Manager
+* Photo Station
+* Audio Station
+* Headphones
+* NZBget web 
+* etc...
 
 Goal
 ----
