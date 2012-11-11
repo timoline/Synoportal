@@ -15,6 +15,12 @@ Goal
 My goal is to create a back -and frontend for this.
 At the moment only a fronten is provided.
 
+Installation
+------------
+Just copy the Synoportal folder in to the root of your Synology Web folder.
+
+Normally this will be: /volume1/web/
+
 Help
 ----
 Feel free to help, you are very welcome  !!!
