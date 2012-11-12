@@ -12,8 +12,10 @@ Its possible to manage links to the diskstation internal websites, like:
 
 Goal
 ----
-My goal is to create a back -and frontend for this.
-At the moment only a fronten is provided.
+My goal is:
+- back -and frontend (currently only a frontend)
+- Pagination
+- Maybe with MySQL
 
 Installation
 ------------
