@@ -17,8 +17,7 @@
 <?php 
 include_once ("config.php");
 
-$pagelink	= $_GET["pagelink"];
-
+$pagelink = (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $defaultpage;
 $pageurl	= $pagelink."/".$pagelink."_main.php";
 ?>
 
