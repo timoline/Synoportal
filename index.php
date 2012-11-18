@@ -16,9 +16,10 @@
 
 <?php 
 include_once ("config.php");
+include_once ("functions.php");
 
-$pagelink = (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $defaultpage;
-$pageurl	= $pagelink."/".$pagelink."_main.php";
+$pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $defaultpage;
+
 ?>
 
 <title><?php echo $sitename ;?> - <?php echo ucfirst($pagelink); ?></title>
@@ -35,7 +36,7 @@ $pageurl	= $pagelink."/".$pagelink."_main.php";
 		</div>
 		<div class="span10">
 		<!--Body content-->
-		<?php include_once ($pageurl); ?>
+		<?php include_once (getPageurl($pagelink)); ?>
 		</div>
     </div>
 	
