@@ -6,7 +6,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>		  
-			<a class="brand" href=""><?php echo $sitename; ?></a>
+			<a class="brand" href=""><?php echo $config["sitename"]; ?></a>
 			<div class="nav-collapse collapse">
 		<!--<p class="navbar-text pull-right">Logged in as <a href="#" class="navbar-link">Username</a>
             </p>

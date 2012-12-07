@@ -18,7 +18,7 @@
 include_once ("config.php");
 include_once ("functions.php");
 
-$pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $defaultpage;
+$pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpage"];
 
 ?>
 

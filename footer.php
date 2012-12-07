@@ -1,4 +1,4 @@
 <!-- Footer -->
 <footer>
-	<div class="copyright"><p><?php echo $footer;?></p></div>
+	<div class="copyright"><p><?php echo $config["footer"];?></p></div>
 </footer>
