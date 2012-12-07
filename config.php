@@ -1,5 +1,5 @@
 <?php
-$config["sitename"]		= "Timrz HQ";
-$config["footer"]		= "&copy; 1995-2012 Timrz";
+$config["sitename"]		= "Synoportal";
+$config["footer"]		= "2012 Synoportal";
 $config["defaultpage"]	= "intralinks";
 ?>
