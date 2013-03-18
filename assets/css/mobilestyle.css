@@ -35,6 +35,12 @@
 	padding-bottom: 6px;
 }
 
+#ConfigContent .config-header {
+    border-top: 1px solid #CCCCCC;
+}
+.toolbox-info {
+    border-top: 1px solid #CCCCCC;
+}
 .nav-list > li > a {
     padding: 15px;
 }
