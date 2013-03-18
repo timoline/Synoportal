@@ -1,0 +1,75 @@
+@media (max-width: 480px) {
+
+#menu_container {
+	float:none;
+	width:100%;
+	position:none;
+	right:85%;
+
+}
+#overall_container {
+	clear:left;
+	float:none;
+	width:100%;
+	position:none;	
+	overflow:hidden;	
+}
+#leftbox {
+	float:left;
+	width:100%;
+	position:relative;
+	left:85%;
+	overflow:hidden;
+	padding-top: 10px;
+	padding-bottom: 18px;
+	font-size: 26px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#rightbox {
+	float:left;
+	width:100%;
+	position:relative;
+	left:85%;
+	overflow:hidden;
+	padding-bottom: 6px;
+}
+
+.nav-list > li > a {
+    padding: 15px;
+}
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+	padding: 15px;
+}
+
+.pagination {
+	float:left;
+}
+
+/* hide label */
+.records-label {
+	display: none;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+	display: none;
+}
+
+/* DATATABLE */
+table.datatable ,
+table.datatable > tbody,
+table.datatable > tbody > tr,
+table.datatable > tbody > tr > td {
+	display: block;
+}
+table.datatable > thead {
+	display: none;
+}
+table.datatable > tbody > tr > td {
+	width: inherit;
+	height: inherit;
+}
+.datatable  td {
+	border: 0;
+}
+}

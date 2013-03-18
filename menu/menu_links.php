@@ -17,6 +17,4 @@ $page[] 		= "favorites";
 $description[]	= "Favorites";
 $icon[]			= "icon-bookmark"; 
 
-//array_multisort($title,$url,$description);
-//print_r($title);
 ?>

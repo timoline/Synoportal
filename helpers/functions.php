@@ -7,8 +7,8 @@
 * @since	0.1
 */
 function getPageurl ($pagelink) {
-	$pageurl = $pagelink."/".$pagelink."_main.php";
+	$pageurl = "views/".$pagelink."/".$pagelink."_main.php";
 	return $pageurl;
 	}
-
+	
 ?>

@@ -14,8 +14,6 @@ Goal
 ----
 My goal is:
 - back -and frontend (currently only a frontend)
-- Pagination
-- Maybe with MySQL
 
 Installation
 ------------
@@ -23,10 +21,13 @@ Just copy the Synoportal folder into the root of your Synology Web folder.
 
 Normally this will be: /volume1/web/
 
+import synoportal.sql in your MySQL database with Phpmyadmin
+
 Help
 ----
 Feel free to help, you are very welcome  !!!
 
 Credits
 -------
-Synoportal is using the css framework of Twitter Bootstrap: http://twitter.github.com/bootstrap/
+Twitter Bootstrap: http://twitter.github.com/bootstrap/
+Pagination Class: http://www.catchmyfame.com
