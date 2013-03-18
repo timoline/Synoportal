@@ -1,6 +1,6 @@
 <?php
 $config["sitename"]		= "Synoportal";
-$config["footer"]		= "&copy; 1995-2013 TIMRZ";
+$config["footer"]		= "&copy; 2012-2013 TIMOLINE";
 $config["defaultpage"]	= "intralinks";
 
 $config["server"]		= "localhost";
