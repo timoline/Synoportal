@@ -54,6 +54,7 @@ class Paginator{
 		}
 		
 		$this->current_page = (isset($_GET['page'])) ? (int) $_GET['page'] : 1 ; // must be numeric > 0
+		
 		$prev_page = $this->current_page-1;
 		$next_page = $this->current_page+1;
 		
@@ -112,9 +113,11 @@ class Paginator{
 			{
 				if($this->range[0] > 2 AND $i == $this->range[0]) $this->return .= "<li><a>...</a></li>";
 				// loop through all pages. if first, last, or in range, display
+				
 				if($i==1 OR $i==$this->num_pages OR in_array($i,$this->range))
-				{
-					$this->return .= ($i == $this->current_page  AND (isset($_GET['page'])) AND $_GET['page'] != 'All') ? 
+				{			
+					//$this->return .= (($i == $this->current_page ) AND (isset($_GET['page'])) AND $_GET['page'] != 'All') ? 
+					$this->return .= ($i == $this->current_page ) ? 
 					"<li class=\"active\"><a title=\"Go to page $i of $this->num_pages\" class=\"a\" href=\"#\">$i</a></li>":
 					"<li><a title=\"Go to page $i of $this->num_pages\" href=\"$_SERVER[PHP_SELF]?page=$i&ipp=$this->items_per_page$this->querystring\">$i</a></li>";
 				}

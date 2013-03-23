@@ -1,12 +1,12 @@
 <?php
-$config["sitename"]		= "Synoportal";
-$config["footer"]		= "&copy; 2012-2013 TIMOLINE";
+$config["sitename"]		= "Timrz HQ";
+$config["footer"]		= "&copy; 1995-2013 TIMRZ";
 $config["defaultpage"]	= "intralinks";
 
-define("MYSQL_HOST","localhost");
-define("MYSQL_DATABASE","synoportal");
-define("MYSQL_USER","root");
-define("MYSQL_PASSWORD","");
+define("DB_HOST","localhost");
+define("DB_NAME","synoportal");
+define("DB_USER","root");
+define("DB_PASS","");
 
 $config["items_per_page"]= "10";
 ?>
