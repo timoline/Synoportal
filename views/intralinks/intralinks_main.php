@@ -12,8 +12,9 @@
 <?php
 $tablename = "intralinks";
 $query = "SELECT COUNT(*) FROM $tablename";
-$result = mysql_query($query) or die(mysql_error());
-$num_rows = mysql_fetch_row($result);
+$result = $db->prepare($query);
+$result->execute();
+$num_rows = $result->fetch(PDO::FETCH_NUM);
 
 $pages = new Paginator;
 $pages->showPrevAndNext	= 1;//show next prev after x pages
@@ -23,7 +24,8 @@ $pages->items_total 	= $num_rows[0];
 $pages->paginate(); 
  
 $query = "SELECT * FROM $tablename ORDER BY ordering ASC $pages->limit";
-$result = mysql_query($query) or die(mysql_error());
+$result = $db->prepare($query);
+$result->execute();
 ?>
 <div class="form-inline toolbox-top clearfix">
 	<div class="pull-left toolbox-length"><?php echo $pages->display_items_per_page();?>
@@ -40,7 +42,7 @@ $result = mysql_query($query) or die(mysql_error());
 	</tr>
 </thead>
 <tbody>
-<?php while ($row = mysql_fetch_object($result)) :?>  
+<?php while ($row = $result->fetch(PDO::FETCH_OBJ)) :?>  
             <tr>  
 				<td><?php echo "<a target=\"_blank\" href=".$row->url.">".$row->title."</a>"; ?></td>  
 				<td><?php echo $row->description; ?></td>  
