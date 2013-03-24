@@ -33,6 +33,27 @@ body {
     color: #FFFFFF;
 }
 
+/* hover the dropdown menu   */
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;    
+}
+a.menu:after, .dropdown-toggle:after {
+    content: none;
+}
+.navbar .dropdown-menu {
+ margin-top: 0px;
+}
+
+.navbar .nav > li > a {
+    color: #ffffff;
+
+}
+
+.navbar .nav > li > a:hover {
+    color: #ffffff;
+}
+/* hover the dropdown menu   */
+
 #ConfigTitle {
     margin-right: 16px;
     margin-top: 16px;
@@ -76,9 +97,12 @@ body {
     padding-right: 5px;
 }
 
+
+
 .toolbox-info {
     margin-top: 10px;
 	#background-color: #FAFAFA;
+	color: #595959;
 	padding: 6px;
 }
 
@@ -147,4 +171,6 @@ body {
 .content_right_content {
 
 }
+
+
 
