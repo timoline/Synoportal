@@ -91,17 +91,14 @@ a.menu:after, .dropdown-toggle:after {
 
 .toolbox-top {
 	#background-color: #FAFAFA;
-	margin-top: 10px;
+	margin-top: 2px;
 	margin-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
+	padding: 6px;
 }
-
-
 
 .toolbox-info {
     margin-top: 10px;
-	#background-color: #FAFAFA;
+	#background-color: #FAFAFA;	
 	color: #595959;
 	padding: 6px;
 }
