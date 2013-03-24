@@ -181,7 +181,7 @@ class Paginator{
 		{
 			$option .= ($i==$this->current_page) ? "<option value=\"$i\" selected>$i</option>":"<option value=\"$i\">$i</option>";
 		}
-		return "<span Page:</span><select onchange=\"window.location='$_SERVER[PHP_SELF]?page='+this[this.selectedIndex].value+'&ipp=$this->items_per_page$this->querystring';return false\">$option</select>";
+		return "<span Page:</span><select class=\"span1\" onchange=\"window.location='$_SERVER[PHP_SELF]?page='+this[this.selectedIndex].value+'&ipp=$this->items_per_page$this->querystring';return false\">$option</select>";
 	}
 	
 	function display_pages()
