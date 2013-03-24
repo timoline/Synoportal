@@ -171,7 +171,7 @@ class Paginator{
 		foreach($this->ipp_array as $ipp_opt) $items .= ($ipp_opt == $this->items_per_page) ? 
 		"<option selected value=\"$ipp_opt\">$ipp_opt</option>":
 		"<option value=\"$ipp_opt\">$ipp_opt</option>";
-		return "<select onchange=\"window.location='$_SERVER[PHP_SELF]?page=1&ipp='+this[this.selectedIndex].value+'$this->querystring';return false\">$items </select>";
+		return "<select class=\"span1\" onchange=\"window.location='$_SERVER[PHP_SELF]?page=1&ipp='+this[this.selectedIndex].value+'$this->querystring';return false\">$items </select>";
 	}
 	
 	function display_jump_menu()

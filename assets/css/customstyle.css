@@ -76,11 +76,6 @@ body {
     padding-right: 5px;
 }
 
-div.toolbox-length select {
-    height: 30px;
-    width: 75px;
-}
-
 .toolbox-info {
     margin-top: 10px;
 	#background-color: #FAFAFA;
