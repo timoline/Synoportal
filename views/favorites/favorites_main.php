@@ -30,7 +30,7 @@ $result->execute();
 ?>
 <div class="form-inline toolbox-top clearfix">
 	<div class="pull-left toolbox-length"><?php echo $pages->display_items_per_page();?>
-	<span class="records-label"> records per page</span></div>
+	<span class="help-inline">records per page</span></div>
 	<div class="pagination pagination-right"><?php echo $pages->display_pages();?></div>	
 </div>
 <!-- table-bordered table-striped  -->
