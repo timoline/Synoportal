@@ -24,11 +24,11 @@
 
 <?php 
 include_once ("config.php");
-include_once ("opendb.php");
+include_once ("helpers/database.class.php");
 include_once ("helpers/functions.php");
+include_once ("helpers/paginator.class.php");
 
 $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpage"];
-
 ?>
 
 <title><?php echo $config["sitename"] ;?> - <?php echo ucfirst($pagelink); ?></title>
