@@ -12,11 +12,15 @@
 	<!-- Mobile settings -->
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	
-	<!-- Libraries -->
+	<!-- css -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/customstyle.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/mobilestyle.css" rel="stylesheet" type="text/css">	
 	
+	<!-- js -->
+	<script src="assets/js/jquery.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+
 	<!-- fav and touch icons -->
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">	
 </head>

@@ -10,5 +10,9 @@ function getPageurl ($pagelink) {
 	$pageurl = "views/".$pagelink."/".$pagelink."_main.php";
 	return $pageurl;
 	}
-	
+
+function redirect ($page) {
+	header ("Location: ".$page);
+	exit();
+	}	
 ?>

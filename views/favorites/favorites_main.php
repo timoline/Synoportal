@@ -32,8 +32,8 @@ $result->execute();
 	<span class="help-inline">records per page</span></div>
 	<div class="pagination pagination-right"><?php echo $pages->display_pages();?></div>	
 </div>
-<!-- table-bordered table-striped  -->
-<table class="table table-condensed datatable table-hover" id="list">
+<!-- table-bordered table-striped table-condensed -->
+<table class="table datatable table-hover" id="list">
 <thead>
 	<tr>
 		<th>Link</th>
