@@ -1,6 +1,6 @@
 <?php
-$config["sitename"]		= "Timrz HQ";
-$config["footer"]		= "&copy; 1995-2013 TIMRZ";
+$config["sitename"]		= "SynoPortal";
+$config["footer"]		= "&copy; 1995-2013 SynoPortal";
 $config["defaultpage"]	= "intralinks";
 
 define("DB_HOST","localhost");
