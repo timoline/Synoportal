@@ -39,7 +39,7 @@ $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpa
 
 <?php include_once("header.php"); ?>
 		
-<div class="container-fluid">
+<div class="container">
     <div id="overall_container">
         <div id="menu_container">
             <div id="leftbox"><?php include_once("menu/menu.php"); ?></div>

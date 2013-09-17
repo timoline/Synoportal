@@ -29,5 +29,5 @@ Feel free to help, you are very welcome  !!!
 
 Credits
 -------
-Twitter Bootstrap: http://twitter.github.com/bootstrap/
+Twitter Bootstrap: http://getbootstrap.com/
 Pagination Class: http://www.catchmyfame.com

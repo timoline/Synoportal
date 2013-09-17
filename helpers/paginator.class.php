@@ -77,7 +77,7 @@ class Paginator{
 			}
 		}
 		
-		$this->return = "<ul>";
+		$this->return = "<ul class=\"pagination pull-right\">";
 		if($this->num_pages > $this->showPrevAndNext)
 		{
 			//first

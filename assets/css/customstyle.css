@@ -3,59 +3,31 @@
 @import "http://fonts.googleapis.com/css?family=Roboto";
 /* When using the navbar-top-fixed */ 
 body {
-
-	padding-top: 44px; 
+	padding-top: 46px; 
 	padding-bottom: 40px; 
 	background-color: #E8E8E8;	
 	font-family: 'Roboto','Arial Narrow',sans-serif
 }
 
-.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
-    box-shadow: 0 5px 5px rgba(51, 51, 51, 0.3);
+.container {
+	max-width: 99%;
 }
-
-.navbar-inner {
+.navbar-default {
+	border-color: #000000;
+}
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+}
+.navbar {
 	background: #0D0D0D; /* for non-css3 browsers */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#0D0D0D'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#0D0D0D)); /* for webkit browsers */
 	background-image: -moz-linear-gradient(center top , #575757 0px, #0D0D0D 100%); /* for firefox 3.6+ */
+	box-shadow: 0 5px 10px rgba(50, 50, 50, 0.5);
 }
 
-.navbar .brand {
-    color: #FFFFFF;
-}
-
-.navbar-link {
-    color: #FFFFFF;
-}
-
-.navbar-text {
-    color: #FFFFFF;
-}
-
-/* hover the dropdown menu   */
-ul.nav li.dropdown:hover > ul.dropdown-menu{
-    display: block;    
-}
-a.menu:after, .dropdown-toggle:after {
-    content: none;
-}
-.navbar .dropdown-menu {
- margin-top: 0px;
-}
-
-.navbar .nav > li > a {
-    color: #ffffff;
-
-}
-
-.navbar .nav > li > a:hover {
-    color: #ffffff;
-}
-/* hover the dropdown menu   */
-
-.nav-list > li > a {
-    padding: 10px 15px;
+.list-group-item {
+    background-color: transparent ;
 }
 
 #ConfigTitle {
@@ -68,7 +40,7 @@ a.menu:after, .dropdown-toggle:after {
     border-radius: 3px 3px 3px 3px;
     font-size: 36px;
     font-weight: bold;
-    margin-top: 12px;
+    margin-top: 11px;
     padding: 0 6px 14px;
 	color: #000000;
 }
@@ -85,7 +57,7 @@ a.menu:after, .dropdown-toggle:after {
 }
 
 .copyright{
-	padding-top: 10px; 
+	padding-top: 5px; 
     font-size: 20px;
     font-weight: bold;
 	color: #999999;
