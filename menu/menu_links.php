@@ -9,13 +9,13 @@ $url[] 			= "/synoportal/index.php?pagelink=intralinks";
 $title[] 		= "Intralinks";
 $page[] 		= "intralinks";
 $description[] 	= "Intralinks";
-$icon[] 		= "icon-home";
+$icon[] 		= "glyphicon-home";
 
 $url[]			= "/synoportal/index.php?pagelink=favorites";
 $title[]		= "Favorites";
 $page[] 		= "favorites";
 $description[]	= "Favorites";
-$icon[]			= "icon-bookmark"; 
+$icon[]			= "glyphicon-bookmark"; 
 
 //array_multisort($title,$url,$description);
 //print_r($title);
