@@ -61,14 +61,18 @@ body {
     font-size: 20px;
     font-weight: bold;
 	color: #999999;
-	text-shadow: 0 1px 0 #FFFFFF;
 	text-align: center;
 }
 
 .toolbox-top {
-	#background-color: #FAFAFA;
-	margin-top: 1px;
+	background-color: #FAFAFA;
 	margin-bottom: 8px;
+	/*height: 48px;*/
+	padding: 6px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.toolbox-length {
 	padding: 6px;
 }
 
@@ -80,13 +84,11 @@ body {
 }
 
 .pagination {
-	height: 32px;
 	margin: 0;
 }
 
 .pagination a {
-	padding: 0 10px;
-	line-height: 26px;
+	
 }
 
 #menu_container {
