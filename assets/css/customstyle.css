@@ -66,16 +66,17 @@ body {
 	text-align: center;
 }
 
+/* top toolbox (length-combo and pager) for tables */
 .toolbox-top {
 	background-color: #FAFAFA;
 	margin-bottom: 8px;
-	/*height: 48px;*/
 	padding: 6px;
 	border-bottom: 1px solid #CCCCCC;
 }
 
-.toolbox-length {
-	padding: 6px;
+/* combobox with page length for tables */
+div.toolbox-length select {
+	width: 75px;
 }
 
 .toolbox-info {
@@ -91,6 +92,11 @@ body {
 
 .pagination a {
 	
+}
+
+/* links in black color */
+.table a:hover {
+	color: #000000;
 }
 
 #menu_container {
