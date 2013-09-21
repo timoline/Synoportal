@@ -38,13 +38,12 @@ body {
 }
 
 #ConfigContent .config-header {
-    border-bottom: 1px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
     font-size: 36px;
     font-weight: bold;
     margin-top: 11px;
-    padding: 0 6px 14px;
+    padding: 0 6px 0px;
 	color: #000000;
+/*	border-bottom: 1px solid #CCCCCC;*/
 }
 
 .footer {
@@ -71,6 +70,7 @@ body {
 	background-color: #FAFAFA;
 	margin-bottom: 8px;
 	padding: 6px;
+	border-top: 1px solid #CCCCCC;
 	border-bottom: 1px solid #CCCCCC;
 }
 
