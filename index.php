@@ -33,6 +33,7 @@ include "classes/generic.class.php";
 include "classes/paginator.class.php";
 
 $db = new Database($config);
+$gen = new Generic($config);
 
 $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpage"];
 ?>
@@ -45,7 +46,7 @@ $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpa
     <div id="overall_container">
         <div id="menu_container">
             <div id="leftbox"><?php include_once("menu/menu.php"); ?></div>
-            <div id="rightbox"><?php include_once (getPageurl($pagelink)); ?></div>
+            <div id="rightbox"><?php include_once ($gen->getPageurl($pagelink)); ?></div>
         </div>
     </div>
 </div>
