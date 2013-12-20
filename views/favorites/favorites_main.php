@@ -11,21 +11,16 @@
 
 <?php
 $tablename = "favorites";
-$query = "SELECT COUNT(*) FROM $tablename";
-$result = $db->prepare($query);
-$result->execute();
-$num_rows = $result->fetch(PDO::FETCH_NUM);
+$num_rows = $db->countData($tablename);
 
 $pages = new Paginator;
 $pages->shownextprev	= 1;//show next prev after x pages
 $pages->default_ipp		= $config["items_per_page"];
 $pages->ipp_array 		= array(5,10,15,20);
-$pages->items_total 	= $num_rows[0];
+$pages->items_total 	= $num_rows[0]->c;
 $pages->paginate(); 
  
-$query = "SELECT * FROM $tablename ORDER BY ordering ASC $pages->limit";
-$result = $db->prepare($query);
-$result->execute();
+$rows = $db->getData($tablename, $pages->getStartpage(), $pages->items_per_page);
 ?>
 <div class="form-inline toolbox-top clearfix">
 	<div class="pull-left toolbox-length"><?php echo $pages->display_items_per_page();?>
@@ -42,13 +37,13 @@ $result->execute();
 	</tr>
 </thead>
 <tbody>
-<?php while ($row = $result->fetch(PDO::FETCH_OBJ)) :?>  
+<?php foreach ($rows as $row) :?>  
             <tr>  
 				<td><?php echo "<a target=\"_blank\" href=".$row->url.">".$row->title."</a>"; ?></td>  
 				<td><?php echo $row->description; ?></td>  
 				<td><?php echo $row->url; ?></td>  
             </tr>  
-<?php endwhile;?>  
+<?php endforeach;?> 
 </tbody>
 </table>
 <div class="toolbox-info clearfix">

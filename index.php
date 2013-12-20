@@ -27,10 +27,12 @@
 <body>
 
 <?php 
-include_once ("config.php");
-include_once ("helpers/database.class.php");
-include_once ("helpers/functions.php");
-include_once ("helpers/paginator.class.php");
+include "inc/settings.inc.php";	
+include "classes/database.class.php";
+include "classes/generic.class.php";
+include "classes/paginator.class.php";
+
+$db = new Database($config);
 
 $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpage"];
 ?>

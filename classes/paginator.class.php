@@ -226,4 +226,12 @@ class Paginator{
 
         return $html;
     }	
+
+    public function getStartpage()
+    {
+        $startpage  = ($this->items_per_page * $this->current_page ) - $this->items_per_page;
+		
+        return $startpage;
+    }	
+	
 }
