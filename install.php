@@ -17,13 +17,18 @@
 		<link href="assets/css/customstyle.css" rel="stylesheet" type="text/css">	
 	</head>
 	<body>
-		<?php include_once("header.php"); ?>
-		<div id="container">
-			<div id="installForm">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><?php echo $config["sitename"];?></a>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="installForm">
 		
 <?php
-
-	
 
 	if(isset($_GET['step']) && $_GET['step'] == 2){
 		if(empty($_POST['db_host']) || empty($_POST['db_user']) || empty($_POST['db_name'])){

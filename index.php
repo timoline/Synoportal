@@ -40,7 +40,14 @@ $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpa
 
 <title><?php echo $config["sitename"] ;?> - <?php echo ucfirst($pagelink); ?></title>
 
-<?php include_once("header.php"); ?>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#"><?php echo $config["sitename"];?></a>
+		</div>
+	</div>
+</div>
 		
 <div class="container">
     <div id="overall_container">
@@ -51,8 +58,11 @@ $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpa
     </div>
 </div>
 
+<!-- Footer -->
 <div class="footer">
-	<?php include_once ("footer.php"); ?>
+<footer>
+	<div class="copyright"><p><?php echo $config["footer"];?></p></div>
+</footer>
 </div>
 </body>
 </html>
