@@ -21,7 +21,7 @@ Just copy the Synoportal folder into the root of your Synology Web folder.
 
 Normally this will be: /volume1/web/
 
-import synoportal.sql in your MySQL database with Phpmyadmin
+Just run install.php in your browser and just type in the needed info, the database will be created automaticly
 
 Help
 ----
@@ -29,5 +29,5 @@ Feel free to help, you are very welcome  !!!
 
 Credits
 -------
-Twitter Bootstrap: http://getbootstrap.com/
-Pagination Class: http://www.catchmyfame.com
+* Twitter Bootstrap: http://getbootstrap.com/
+* Pagination Class: http://www.catchmyfame.com
