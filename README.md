@@ -16,11 +16,9 @@ My goal is:
 
 Installation
 ------------
-Just copy the Synoportal folder into the root of your Synology Web folder.
-
-Normally this will be: /volume1/web/
-
-Just run install.php in your browser and just type in the needed info, the database will be created automaticly
+* Copy the Synoportal folder into the root of your Synology Web folder. (Normally this will be: /volume1/web/ )
+* Just run install.php in your browser.
+* Fill in the required fields, the database will be created automaticly
 
 Help
 ----
