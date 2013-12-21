@@ -23,6 +23,39 @@ class Database {
         echo $message;
     }
 
+    /**
+     * Get login 
+     */
+     public function getLogin($username, $password) {
+        try {
+            $sth = $this->_db->prepare("SELECT id FROM users WHERE username= ? AND password= ? ");
+
+            $sth->bindValue(1, $username, PDO::PARAM_STR);
+            $sth->bindValue(2, $password, PDO::PARAM_STR);
+            $sth->execute();
+            $row = $sth->fetch(PDO::FETCH_OBJ);
+			return $row->id;
+        } catch (PDOException $e) {
+            $this->printErrorMessage($e->getMessage());
+        }
+    }
+
+    /**
+     * Update login 
+     */
+     public function updateLogin($password) {
+        try {
+            $sth = $this->_db->prepare("UPDATE users SET password= ? WHERE username='admin'");
+
+            $sth->bindValue(1, $password, PDO::PARAM_STR);
+            $sth->execute();
+
+			return $sth->rowCount();
+        } catch (PDOException $e) {
+            $this->printErrorMessage($e->getMessage());
+        }
+    }
+	
 	/**
 	* Count data
 	*/

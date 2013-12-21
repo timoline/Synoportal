@@ -31,6 +31,7 @@ include "inc/settings.inc.php";
 include "classes/database.class.php";
 include "classes/generic.class.php";
 include "classes/paginator.class.php";
+include "inc/session.inc.php";
 
 $db = new Database($config);
 $gen = new Generic($config);

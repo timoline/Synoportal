@@ -16,7 +16,7 @@
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
 		<link href="assets/css/customstyle.css" rel="stylesheet" type="text/css">	
 	</head>
-	<body>
+	<body class="install">
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
@@ -77,11 +77,20 @@
 					INSERT INTO `".$db_name."`. `favorites` (`id`, `url`, `title`, `description`, `ordering`) VALUES
 					(1, 'http://www.upc.nl/televisie/tv-zenders-horizon/', 'TV Kanalen', 'Horizon TV Kanalen', 0);
 					
+					CREATE TABLE IF NOT EXISTS `".$db_name."`. `users` (
+					  `id` int(11) NOT NULL AUTO_INCREMENT,
+					  `username` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+					  `password` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+					  PRIMARY KEY (`id`)
+					) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+					
+					INSERT INTO `".$db_name."`. `users` (`id`, `username`, `password`) VALUES
+					(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');					
 					");
 					if($succes == 1)
 					{
-						echo "<p style='color:green;'>Installatie succesvol. Verwijder <b>install.php</b> en <b>update.php</b></p>";
-						echo "<p style='color:green;'>Default gebruikersnaam/wachtwoord is <b>admin</b>/<b>admin</b></p>";
+						echo "<div class=\"alert alert-success\">Installation is succeeded. Remove <b>install.php</b><br>";
+						echo "Default username/password is <b>admin</b>/<b>admin</b></div>";
 					}					
 
 				} catch (PDOException $e) {
@@ -122,9 +131,9 @@
 		if($ok){
 		?>
 			<div class="row">
-				<div class="alert alert-success">Check is succeeded</div>			
+				<div class="alert alert-success">Precheck succeeded</div>			
 				<div class="col-md-4 col-md-offset-4">
-					<div class="panel panel-default" >		
+					<div class="panel panel-default panel-margin" >		
 						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Database information</div>							
 						<div class="panel-body">
 							<form class="form-signin" action='install.php?step=2' method='POST' role="form">
