@@ -129,9 +129,10 @@
 						<div class="panel-body">
 							<form class="form-signin" action='install.php?step=2' method='POST' role="form">
 								<div><input class="form-control" type='text' name='db_host' placeholder="Database host" required autofocus></div>
+								<div><input class="form-control" type='text' name='db_name' placeholder="Database name" required></div>		
 								<div><input class="form-control" type='text' name='db_user' placeholder="Database user" required></div>
-								<div><input class="form-control" type='text' name='db_pass' placeholder="Database password" required></div>
-								<div><input class="form-control" type='text' name='db_name' placeholder="Database name" required></div>
+								<div><input class="form-control" type='text' name='db_pass' placeholder="Database password" ></div>
+
 							
 								<div><input class="btn btn-primary btn-block" type='submit' value='Next'/></div>
 							</form>
