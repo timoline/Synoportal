@@ -206,7 +206,7 @@ class Paginator{
 	
     public function isNextPage()
     {
-        return ($this->current_page < $this->num_pages AND $this->items_total >= $this->items_per_page) AND (isset($_GET['page'])) AND ($_GET['page'] != 'All') AND $this->current_page > 0;
+        return ($this->current_page < $this->num_pages AND $this->items_total >= $this->items_per_page) AND ($_GET['page'] != 'All') AND $this->current_page > 0;
     }	
 	
     public function getPaginationSummary()
