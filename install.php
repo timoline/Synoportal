@@ -125,7 +125,7 @@
 				<div class="alert alert-success">Check is succeeded</div>			
 				<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default" >		
-						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Darabase information</div>							
+						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Database information</div>							
 						<div class="panel-body">
 							<form class="form-signin" action='install.php?step=2' method='POST' role="form">
 								<div><input class="form-control" type='text' name='db_host' placeholder="Database host" required autofocus></div>
