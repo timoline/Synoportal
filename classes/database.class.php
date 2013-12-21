@@ -26,7 +26,7 @@ class Database {
 	/**
 	* Count data
 	*/
-    public function countData($tablename) {
+    public function countTableData($tablename) {
         try {
             $sth = $this->_db->prepare("
             SELECT
@@ -47,7 +47,7 @@ class Database {
 	/**
 	* Get data
 	*/
-    public function getData($tablename, $start, $limit) {
+    public function getTableData($tablename, $start, $limit) {
         try {
             $sth = $this->_db->prepare("
             SELECT

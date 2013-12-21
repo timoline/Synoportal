@@ -11,7 +11,7 @@
 
 <?php
 $tablename = "favorites";
-$num_rows = $db->countData($tablename);
+$num_rows = $db->countTableData($tablename);
 
 $pages = new Paginator;
 $pages->shownextprev	= 1;//show next prev after x pages
@@ -20,7 +20,7 @@ $pages->ipp_array 		= array(5,10,15,20);
 $pages->items_total 	= $num_rows[0]->c;
 $pages->paginate(); 
  
-$rows = $db->getData($tablename, $pages->getStartpage(), $pages->items_per_page);
+$rows = $db->getTableData($tablename, $pages->getStartpage(), $pages->items_per_page);
 ?>
 <div class="form-inline toolbox-top clearfix">
 	<div class="pull-left toolbox-length"><?php echo $pages->display_items_per_page();?>
