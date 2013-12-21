@@ -85,7 +85,7 @@
 					}					
 
 				} catch (PDOException $e) {
-					die(print("<p class='error'>Database error: ". $e->getMessage() ."</p>"));
+					die(print("<p class='alert alert-danger'>Database error: ". $e->getMessage() ."</p>"));
 				}		
 	
 			}
@@ -114,7 +114,7 @@
 /*		
 		if(!extension_loaded('curl'))
 		{
-			$errorMsg .= '<b>CURL extension</b> ontbreekt!</p>';
+			$errorMsg .= '<b>CURL extension</b> is required!</p>';
 			$ok = false;
 		}
 */
@@ -122,7 +122,7 @@
 		if($ok){
 		?>
 			<div class="row">
-				<div class="alert alert-success">Check succesvol</div>			
+				<div class="alert alert-success">Check is succeeded</div>			
 				<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default" >		
 						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Darabase information</div>							
