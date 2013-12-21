@@ -32,7 +32,7 @@
 
 	if(isset($_GET['step']) && $_GET['step'] == 2){
 		if(empty($_POST['db_host']) || empty($_POST['db_user']) || empty($_POST['db_name'])){
-			echo "<p class='error'><b>db_host</b>, <b>db_user</b> en <b>db_name</b>, zijn vereist!</p>";
+			echo "<p class='alert alert-danger'><b>db_host</b>, <b>db_user</b> and <b>db_name</b>, are required!</p>";
 		}
 		else
 		{
@@ -98,17 +98,17 @@
 
 		if (version_compare(PHP_VERSION, '5.2.0') <= 0) 
 		{
-			$errorMsg .= '<b>PHP 5.2.0</b> is vereist';
+			$errorMsg .= '<b>PHP 5.2.0</b> is required!';
 			$ok = false;
 		}	
 		if(!is_writable('inc/settings.inc.php'))
 		{
-			$errorMsg .= '<b>settings.inc.php</b> is niet schrijfbaar!';
+			$errorMsg .= '<b>settings.inc.php</b> is not writeable!';
 			$ok = false;
 		}
 		if(!extension_loaded('pdo_mysql'))
 		{
-			$errorMsg .= '<b>PDO Mysql</b> extension ontbreekt!';
+			$errorMsg .= '<b>PDO Mysql</b> extension is required!';
 			$ok = false;
 		}
 /*		
@@ -120,28 +120,30 @@
 */
 		
 		if($ok){
-			echo "<form action='install.php?step=2' method='POST'/>
-			<p style='color:green;'>Check succesvol.</p>
-			<table>
-				<tr>
-					<td>Database host:</td><td><input type='text' name='db_host' value='localhost'/></td>
-				</tr>			
-				<tr>
-					<td>Database user:</td><td><input type='text' name='db_user' value=''/></td>
-				</tr>					
-				<tr>
-					<td>Database password:</td><td><input type='text' name='db_pass' value=''/></td>
-				</tr>	
-				<tr>
-					<td>Database name:</td><td><input type='text' name='db_name' value='synoportal'/></td>
-				</tr>				
-			</table>
-			<input type='submit' value='Verder'/>
-			"; 
+		?>
+			<div class="row">
+				<div class="alert alert-success">Check succesvol</div>			
+				<div class="col-md-4 col-md-offset-4">
+					<div class="panel panel-default" >		
+						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Darabase information</div>							
+						<div class="panel-body">
+							<form class="form-signin" action='install.php?step=2' method='POST' role="form">
+								<div><input class="form-control" type='text' name='db_host' placeholder="Database host" required autofocus></div>
+								<div><input class="form-control" type='text' name='db_user' placeholder="Database user" required></div>
+								<div><input class="form-control" type='text' name='db_pass' placeholder="Database password" required></div>
+								<div><input class="form-control" type='text' name='db_name' placeholder="Database name" required></div>
+							
+								<div><input class="btn btn-primary btn-block" type='submit' value='Next'/></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>										
+<?php
 		}
 		else
 		{
-			echo "<p class='error'>" . $errorMsg ."</p>";
+			echo "<p class='alert alert-danger'>" . $errorMsg ."</p>";
 		}
 	}
 
