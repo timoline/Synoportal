@@ -1,6 +1,5 @@
 Synoportal
 ----------
-
 Synoportal is a simpel web portal for the Synology NAS devices.
 Its possible to manage links to the diskstation internal websites, like:
 * Disk Station Manager
