@@ -18,8 +18,8 @@
 	<link href="assets/css/mobilestyle.css" rel="stylesheet" type="text/css">	
 	
 	<!-- js -->
-	<script src="assets/js/jquery.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.js" type="text/javascript"></script>	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/script.js" type="text/javascript"></script>	
 
 	<!-- fav and touch icons -->
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">	
@@ -46,7 +46,20 @@ $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpa
 	<div class="container">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#"><?php echo $config["sitename"];?></a>
-		</div>
+		</div>	
+
+            <ul class="nav pull-right">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li class="divider"></li>
+                        <li><a href="?logout=1">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
 	</div>
 </div>
 		
