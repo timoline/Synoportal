@@ -50,7 +50,7 @@ $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpa
 		</div>	
             <ul class="nav pull-right">
                 <li class="dropdown">
-                    <button class="btn btn-inverse dropdown-toggle" href="#" data-toggle="dropdown" >Admin <b class="caret"></b></button>
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">Admin <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
