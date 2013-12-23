@@ -34,9 +34,10 @@ body {
     display: block;
     padding: 15px 15px;
     position: relative;
+
 }
 
-.nav > li > a:hover , nav > li > a:focus{
+.nav > li > a:hover , .nav > li > a:focus{
 	text-decoration: none;
 	color: #CCCCCC;
     background-color: #0D0D0D;
