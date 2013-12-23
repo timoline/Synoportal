@@ -33,7 +33,10 @@
 		<div id="container">
 			<div class="row">
 			<?php if ($loginInvalid) { ?>
-				<div class="alert alert-danger">Username and/or password is incorrect</div>
+				<div class="alert alert-danger">
+				<h4 class="alert-heading">Authentication error!</h4>
+				<p>Username and/or password is incorrect</p>
+				</div>
 			<?php } ?>
 				<div class="col-md-4 col-md-offset-4">
 

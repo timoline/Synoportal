@@ -32,7 +32,7 @@
 
 	if(isset($_GET['step']) && $_GET['step'] == 2){
 		if(empty($_POST['db_host']) || empty($_POST['db_user']) || empty($_POST['db_name'])){
-			echo "<p class='alert alert-danger'><b>db_host</b>, <b>db_user</b> and <b>db_name</b>, are required!</p>";
+			echo "<div class='alert alert-danger'><h4 class=\"alert-heading\">Database error!</h4><p><b>db_host</b>, <b>db_user</b> and <b>db_name</b>, are required!</p></div>";
 		}
 		else
 		{
@@ -89,12 +89,14 @@
 					");
 					if($succes == 1)
 					{
-						echo "<div class=\"alert alert-success\">Installation is succeeded. Remove <b>install.php</b><br>";
-						echo "Default username/password is <b>admin</b>/<b>admin</b></div>";
+						echo "<div class=\"alert alert-success\">";
+						echo "<h4 class=\"alert-heading\">Installation succeeded. </h4>";			
+						echo "<p>Remove <b>install.php</b><br></p>";
+						echo "<p>Default username/password is <b>admin</b>/<b>admin</b></p></div>";
 					}					
 
 				} catch (PDOException $e) {
-					die(print("<p class='alert alert-danger'>Database error: ". $e->getMessage() ."</p>"));
+					die(print("<div class='alert alert-danger'><h4 class=\"alert-heading\">Database error:  </h4><p>". $e->getMessage() ."</p></div>"));
 				}		
 	
 			}
@@ -131,7 +133,10 @@
 		if($ok){
 		?>
 			<div class="row">
-				<div class="alert alert-success">Precheck succeeded</div>			
+				<div class="alert alert-success">
+				<h4 class="alert-heading">Precheck</h4>
+				<p>Precheck succeeded</p>
+				</div>
 				<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default panel-margin" >		
 						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Database information</div>							

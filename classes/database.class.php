@@ -15,7 +15,7 @@ class Database {
             $this->_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->_db->query('SET CHARACTER SET utf8');
         } catch (PDOException $e) {
-            exit('Error while connecting to database.'.$e->getMessage());
+            exit(print("<div class='alert alert-danger'><h4 class=\"alert-heading\">Database error:  </h4><p>". $e->getMessage() ."</p></div>"));
         }
     }
 
