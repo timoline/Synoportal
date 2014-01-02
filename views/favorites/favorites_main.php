@@ -15,7 +15,7 @@ $num_rows = $db->countTableData($tablename);
 
 $pages = new Paginator;
 $pages->shownextprev	= 1;//show next prev after x pages
-$pages->default_ipp		= $config["items_per_page"];
+$pages->default_ipp		= $settings['ipp'];
 $pages->ipp_array 		= array(5,10,15,20);
 $pages->items_total 	= $num_rows[0]->c;
 $pages->paginate(); 

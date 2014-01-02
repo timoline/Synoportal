@@ -55,6 +55,46 @@ class Database {
             $this->printErrorMessage($e->getMessage());
         }
     }
+
+	/**
+     * Update settings
+     */
+    public function updateSettings($key, $value) {
+        try {
+			$sth = $this->_db->prepare("INSERT INTO settings (`value`,`key`) VALUES (:value, :key) ON DUPLICATE KEY UPDATE `value`=:value, `key`=:key");
+			
+			$sth->bindValue(':value', $value, PDO::PARAM_STR);
+			$sth->bindValue(':key', $key, PDO::PARAM_STR);			
+            $sth->execute();
+            
+			return $sth->rowCount();
+       } catch (PDOException $e) {
+            $this->printErrorMessage($e->getMessage());
+        }
+    }     
+        
+    /**
+     * Get settings 
+     */
+     public function getSettings() {
+        try {
+            $sth = $this->_db->prepare("SELECT * FROM settings");
+            
+            $sth->setFetchMode(PDO::FETCH_ASSOC);
+            $sth->execute();
+
+            $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
+                  
+            foreach($rows as $k => $v)
+            {
+            	$settings[$v['key']] = $v['value'];
+            }
+            
+            return $settings;
+        } catch (PDOException $e) {
+            $this->printErrorMessage($e->getMessage());
+        }
+    }    
 	
 	/**
 	* Count data

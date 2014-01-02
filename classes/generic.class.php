@@ -28,6 +28,36 @@ class Generic {
 		header ("Location: ".$page);
 		exit();
 		}	
+
+    /**
+     * Create selector
+     */
+	public function selector($name, $selected, $options){
+		$html = "<select class=\"form-control\" name='".$name."'>\n";
+		
+		foreach($options as $k => $v) 
+		{
+			$html .= "<option value='" . $k . "'" . ($k==$selected?" selected":"") . ">$v</option>\n";
+		}
+		
+		$html .= "</select>\n";
+		
+		return $html;
+	}
+
+   /**
+     * get views from vieuws folder
+     */		
+	public function getViews($dir) {
+	$subfolders = scandir($dir);
+		foreach($subfolders as $folder){
+			if($folder != '.' && $folder != '..'){
+				$folders[$folder] = $folder;   
+			}
+		}
+	return $folders;
+	}
+	
    /**
      * Edit config file
      */		 

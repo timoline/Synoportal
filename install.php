@@ -10,7 +10,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>SynPortal</title>
+		<title>SynoPortal - Install</title>
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<!-- css -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
@@ -85,7 +85,20 @@
 					) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 					
 					INSERT INTO `".$db_name."`. `users` (`id`, `username`, `password`) VALUES
-					(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');					
+					(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');	
+
+					CREATE TABLE IF NOT EXISTS `".$db_name."`. `settings` (
+					  `key` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+					  `value` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+					  UNIQUE KEY `key` (`key`)
+					) ENGINE=MyISAM DEFAULT CHARSET=utf8;	
+					
+					INSERT INTO `".$db_name."`. `settings` (`key`, `value`) VALUES
+						('sitename', 'SynoPortal'),
+						('footer', '1995-2014 SynoPortal'),
+						('ipp', '10'),
+						('startpage', 'intralinks');						
+					
 					");
 					if($succes == 1)
 					{

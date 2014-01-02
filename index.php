@@ -36,24 +36,25 @@ include "inc/session.inc.php";
 
 $db = new Database($config);
 $gen = new Generic($config);
-
-$pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpage"];
+$settings = $db->getSettings();
+	
+$pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $settings['startpage'];
 ?>
 
-<title><?php echo $config["sitename"] ;?> - <?php echo ucfirst($pagelink); ?></title>
+<title><?php echo $settings['sitename'];?> - <?php echo ucfirst($pagelink); ?></title>
 
 <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><?php echo $config["sitename"];?></a>
+			<a class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
 		</div>	
             <ul class="nav pull-right">
                 <li class="dropdown">
 					<a href="#" data-toggle="dropdown" class="dropdown-toggle">Admin <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
+                        <li><a href="settings.php">Settings</a></li>
+                        <!--<li><a href="#">Another action</a></li>-->
                         <li class="divider"></li>
                         <li><a href="?logout=1">Logout</a></li>
                     </ul>
@@ -74,7 +75,7 @@ $pagelink 	= (isset($_GET['pagelink'])) ? $_GET['pagelink'] : $config["defaultpa
 <!-- Footer -->
 <div class="footer">
 <footer>
-	<div class="copyright"><p><?php echo $config["footer"];?></p></div>
+	<div class="copyright"><p><?php echo $settings['footer'];?></p></div>
 </footer>
 </div>
 </body>

@@ -15,7 +15,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>SynPortal</title>
+		<title>SynoPortal - Login</title>
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<!-- css -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
