@@ -65,7 +65,7 @@
 	<div id="containerSettings">
 		<div class="row">
 			<form class="form-horizontal">	
-			<div class="col-lg-3" role="menu">
+			<div class="col-lg-2" role="menu">
 				<div class="bs-sidebar hidden-print" role="complementary">
 					<ul class="nav nav-pills nav-stacked">
 						<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
@@ -78,7 +78,7 @@
 					<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
 				</div>					
 			</div>		
-			<div class="col-lg-9" role="main">		
+			<div class="col-lg-10" role="main">		
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="settingsGeneral">
 							<div id="ConfigContent" style="display: block;">
