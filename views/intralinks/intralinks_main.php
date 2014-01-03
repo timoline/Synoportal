@@ -1,5 +1,4 @@
 <?php $title = "Intralinks" ;?>
-<div id="MessagesTab" class="tab-pane fade active in">
 <div id="ConfigContent" style="display: block;">
 	<div class="config-header clearfix">
 		<div id="ConfigTitle" class="pull-left config-title">
@@ -48,4 +47,3 @@ $rows = $db->getTableData($tablename, $pages->getStartpage(), $pages->items_per_
 <div class="toolbox-info clearfix">
 	<div class="pull-left"><?php echo $pages->getPaginationSummary();?></div>  
 </div> 
-</div>
