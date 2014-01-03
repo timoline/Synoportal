@@ -68,7 +68,7 @@
 			<div class="col-lg-3" role="menu">
 				<div class="bs-sidebar hidden-print" role="complementary">
 					<ul class="nav nav-pills nav-stacked">
-						<li><a class="active" href="#settingsGeneral" data-toggle="tab">General</a></li>
+						<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
 						<li><a href="#settingsUpdates" data-toggle="tab">Change password</a></li>										
 					</ul>
 				</div>
