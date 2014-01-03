@@ -1,15 +1,13 @@
 <?php	
-	include "inc/settings.inc.php";	
-	
-	session_start();
-	
-	$loginInvalid = false;
-	
-	if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
-	{
-		$loginInvalid = true;
-		unset($_SESSION['user_id']);
-	}
+session_start();
+
+$loginInvalid = false;
+
+if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
+{
+	$loginInvalid = true;
+	unset($_SESSION['user_id']);
+}
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -19,14 +17,14 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<!-- css -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
-		<link href="assets/css/customstyle.css" rel="stylesheet" type="text/css">	
+		<link href="assets/css/index.css" rel="stylesheet" type="text/css">	
 	</head>
 	<body class="login">
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#"><?php echo $config["sitename"];?></a>
+				<a class="navbar-brand" href="#"></a>
 			</div>
 		</div>
 	</div>
