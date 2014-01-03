@@ -65,7 +65,7 @@
 	<div id="containerSettings">
 		<div class="row">
 			<form class="form-horizontal">	
-			<div class="col-lg-2" role="menu">
+			<div class="col-lg-2 well" role="menu">
 				<div class="bs-sidebar hidden-print" role="complementary">
 					<ul class="nav nav-pills nav-stacked">
 						<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
