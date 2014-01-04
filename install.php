@@ -26,7 +26,7 @@
 			  <span class="sr-only">Toggle navigation</span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
+			<a class="navbar-brand" href="#"></a>
 		</div>
 	 </div>
 </nav>

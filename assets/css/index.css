@@ -16,6 +16,11 @@ body {
 	box-shadow: 0 5px 10px rgba(50, 50, 50, 0.5);
 }
 
+.alert{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
 #containerSettings {
 	position:absolute;
 	left:0;

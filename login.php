@@ -28,7 +28,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 			  <span class="sr-only">Toggle navigation</span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
+			<a class="navbar-brand" href="#"></a>
 		</div>
 	 </div>
 </nav>
