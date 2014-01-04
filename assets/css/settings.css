@@ -3,26 +3,8 @@
 @import "http://fonts.googleapis.com/css?family=Roboto";
 /* When using the navbar-top-fixed */ 
 body {
-	padding-top: 50px; 
-	padding-bottom: 40px; 
 	background-color: #FFFFFF;	
 	font-family: 'Roboto','Arial Narrow',sans-serif;
-
-}
-
-#containerSettings {
-	position:absolute;
-	left:0;
-	top:46px;
-	right:0px;
-	padding:20px 20px;
-	background:white;
-}
-.navbar-default {
-	border-color: #0D0D0D;
-}
-.navbar-default .navbar-brand {
-    color: #FFFFFF;
 }
 
 .navbar {
@@ -32,6 +14,15 @@ body {
 	background-image: -moz-linear-gradient(center top , #575757 0px, #0D0D0D 100%); /* for firefox 3.6+ */
 	
 	box-shadow: 0 5px 10px rgba(50, 50, 50, 0.5);
+}
+
+#containerSettings {
+	position:absolute;
+	left:0;
+	top:46px;
+	right:0px;
+	padding:20px 20px;
+	background:white;
 }
 
 .fieldset {
@@ -56,6 +47,6 @@ body {
     font-size: 12px;
     font-weight: bold;
 	padding: 10px;
-	background: #428bca;
+	background: #CCCCCC;
 	color: #FFFFFF;
 }

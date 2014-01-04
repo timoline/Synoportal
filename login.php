@@ -21,7 +21,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 	</head>
 	<body class="login">
 	<!-- Fixed navbar -->
-	<div class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar navbar-inverse navbar-static-top">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#"></a>
