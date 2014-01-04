@@ -5,7 +5,6 @@
 body {
 	background-color: #FFFFFF;	
 	font-family: 'Roboto','Arial Narrow',sans-serif;
-
 }
 
 .navbar {
@@ -71,6 +70,7 @@ div.toolbox-length select {
 
 .footer {
 	width: 100%;
+	left:0px;
     background-color: #f5f5f5;
     #background-image: linear-gradient(to top, #FFFFFF, #f5f5f5);
 	border-top: 1px solid #CCCCCC;

@@ -27,65 +27,73 @@
 <body>
 
 <?php	
-	include "inc/settings.inc.php";	
-	include "classes/database.class.php";
-	include "classes/generic.class.php";	
-	include "classes/paginator.class.php";	
-	include "inc/session.inc.php";	
-	
-	$db = new Database($config);
-	$gen = new Generic($config);	
-	$settings = $db->getSettings();
-	
-	$ippArray = array(
-		'5' => '5',
-		'10' => '10',
-		'15' => '15',
-		'20' => '20'
-	);
-	
-	$viewArray = $gen->getViews("views");
-	$ippSelect = $gen->selector('ipp', $settings['ipp'], $ippArray);	
-	$viewsSelect = $gen->selector('startpage', $settings['startpage'], $viewArray);
+include "inc/settings.inc.php";	
+include "classes/database.class.php";
+include "classes/generic.class.php";	
+include "classes/paginator.class.php";	
+include "inc/session.inc.php";	
+
+$db = new Database($config);
+$gen = new Generic($config);	
+$settings = $db->getSettings();
+
+$ippArray = array(
+	'5' => '5',
+	'10' => '10',
+	'15' => '15',
+	'20' => '20'
+);
+
+$viewArray = $gen->getViews("views");
+$ippSelect = $gen->selector('ipp', $settings['ipp'], $ippArray);	
+$viewsSelect = $gen->selector('startpage', $settings['startpage'], $viewArray);
 ?>
-		
-	<!-- Modal -->
-	<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h4 class="modal-title" id="messageLabel"></h4>
-		  </div>
-		  <div class="modal-body">
-			<div id="message"></div>
-		  </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		  </div>
-		</div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->			
+	
+<!-- Modal -->
+<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4 class="modal-title" id="messageLabel"></h4>
+	  </div>
+	  <div class="modal-body">
+		<div id="message"></div>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->			
 				
-<!-- Fixed navbar -->
-<div class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			</button>
 			<a class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
-		</div>	
-            <ul class="nav pull-right">
-                <li class="dropdown">
-					<a href="#" data-toggle="dropdown" class="dropdown-toggle">Admin <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="settings.php">Settings</a></li>
-                        <!--<li><a href="#">Another action</a></li>-->
-                        <li class="divider"></li>
-                        <li><a href="?logout=1">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>	
-	</div>
-</div>
+		</div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="settings.php">Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="?logout=1">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	 </div>
+</nav>
+
 <div id="containerSettings">
 	<div class="row">
 		<div class="col-lg-2 well" role="menu">
