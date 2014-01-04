@@ -18,8 +18,7 @@ if(isset($_SESSION['user_id']) && $_SESSION['user_id'] != false)
 		$includedFields = array(
 			'sitename',
 			'footer',
-			'ipp',
-			'startpage'
+			'ipp'
 		);
 		
 		foreach($_POST as $k => $v)

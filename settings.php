@@ -15,9 +15,7 @@
 		'20' => '20'
 	);
 	
-	$viewArray = $gen->getViews("views");
 	$ippSelect = $gen->selector('ipp', $settings['ipp'], $ippArray);	
-	$viewsSelect = $gen->selector('startpage', $settings['startpage'], $viewArray);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -104,12 +102,6 @@
 										<input type="text" class="form-control" name="footer" value="<?php echo $settings['footer'];?>" placeholder="&copy; 1995-2013 SynoPortal"/>
 									</div>					
 								</div>		
-								<div class="form-group" >
-									<label for="ipp" class="col-lg-2 control-label">Default startpage</label>
-									<div class="col-lg-2">
-										<?php echo $viewsSelect; ?>
-									</div>					
-								</div>	
 								<div class="form-group" >
 									<label for="ipp" class="col-lg-2 control-label">Items per page</label>
 									<div class="col-lg-2">

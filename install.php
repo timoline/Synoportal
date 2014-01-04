@@ -101,8 +101,7 @@
 					INSERT INTO `".$db_name."`. `settings` (`key`, `value`) VALUES
 						('sitename', 'SynoPortal'),
 						('footer', '1995-2014 SynoPortal'),
-						('ipp', '10'),
-						('startpage', 'intralinks');						
+						('ipp', '10');						
 					
 					");
 					if($succes == 1)
