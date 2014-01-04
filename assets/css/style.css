@@ -21,6 +21,12 @@ body {
 	margin-right: 40px;
 }
 
+.fieldset {
+	border-bottom:1px solid #CCCCCC;	
+	padding: 10px;
+	margin-top: 10px;
+} 
+
 #containerSettings {
 	position:absolute;
 	left:0;

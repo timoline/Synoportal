@@ -27,15 +27,14 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<!-- css -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
-		<link href="assets/css/settings.css" rel="stylesheet" type="text/css">	
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	<!-- js -->
 	<script src="assets/js/jquery.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.js" type="text/javascript"></script>	
 	<script src="assets/js/settings.js" type="text/javascript"></script>
 	</head>
-	<body class="login">
-	
-		
+	<body class="settings">
+			
 	<!-- Modal -->
 	<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
@@ -147,5 +146,11 @@
 				</form>								
 			</div>	
 		</div>
+<!-- *** FOOTER ************************************************************ -->	
+<div class="footer">
+<footer>
+	<div class="copyright"><p><?php echo $settings['footer'];?></p></div>
+</footer>
+</div>			
 	</body>
 </html>

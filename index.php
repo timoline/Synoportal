@@ -14,7 +14,7 @@
 	
 	<!-- css -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
-	<link href="assets/css/index.css" rel="stylesheet" type="text/css">	
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	
 	<!-- js -->
 	<script src="assets/js/jquery.js" type="text/javascript"></script>
@@ -48,25 +48,8 @@ $viewArray = $gen->getViews("views");
 $ippSelect = $gen->selector('ipp', $settings['ipp'], $ippArray);	
 $viewsSelect = $gen->selector('startpage', $settings['startpage'], $viewArray);
 ?>
-	
-<!-- Modal -->
-<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-	<div class="modal-content">
-	  <div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		<h4 class="modal-title" id="messageLabel"></h4>
-	  </div>
-	  <div class="modal-body">
-		<div id="message"></div>
-	  </div>
-	  <div class="modal-footer">
-		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	  </div>
-	</div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->			
-				
+
+<!-- *** NAVBAR ************************************************************ -->				
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -93,7 +76,7 @@ $viewsSelect = $gen->selector('startpage', $settings['startpage'], $viewArray);
 		</div><!-- /.navbar-collapse -->
 	 </div>
 </nav>
-
+<!-- *** CONTENT ************************************************************ -->	
 <div id="containerSettings">
 	<div class="row">
 		<div class="col-lg-2 well" role="menu">
@@ -116,7 +99,7 @@ $viewsSelect = $gen->selector('startpage', $settings['startpage'], $viewArray);
 		</div>	
 	</div>
 </div>
-<!-- Footer -->
+<!-- *** FOOTER ************************************************************ -->	
 <div class="footer">
 <footer>
 	<div class="copyright"><p><?php echo $settings['footer'];?></p></div>

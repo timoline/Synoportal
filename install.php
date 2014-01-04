@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<!-- css -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
-		<link href="assets/css/index.css" rel="stylesheet" type="text/css">	
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	</head>
 	<body class="install">
 	
@@ -26,7 +26,7 @@
 			  <span class="sr-only">Toggle navigation</span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"></a>
+			<a class="navbar-brand" href="#">SynoPortal</a>
 		</div>
 	 </div>
 </nav>
