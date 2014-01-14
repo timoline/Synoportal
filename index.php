@@ -36,17 +36,6 @@ include "inc/session.inc.php";
 $db = new Database($config);
 $gen = new Generic($config);	
 $settings = $db->getSettings();
-
-$ippArray = array(
-	'5' => '5',
-	'10' => '10',
-	'15' => '15',
-	'20' => '20'
-);
-
-$viewArray = $gen->getViews("views");
-$ippSelect = $gen->selector('ipp', $settings['ipp'], $ippArray);	
-$viewsSelect = $gen->selector('startpage', $settings['startpage'], $viewArray);
 ?>
 
 <!-- *** NAVBAR ************************************************************ -->				
