@@ -27,7 +27,6 @@ $(document).ready(function() {
 		} else {
 			$('#maincontent').css({width: ''});
 			$('#leftmenu').show();
-			//
 		}
 		collapsed = !collapsed;
 	});		
