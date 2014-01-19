@@ -47,7 +47,7 @@ $settings = $db->getSettings();
 			  <span class="sr-only">Toggle navigation</span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
+			<a id="showMenu" class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
 		</div>
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,7 +68,7 @@ $settings = $db->getSettings();
 <!-- *** CONTENT ************************************************************ -->	
 <div id="containerSettings">
 	<div class="row">
-		<div class="col-lg-2 well" role="menu">
+		<div id="leftmenu" class="col-lg-2 well" role="menu">
 			<div class="bs-sidebar hidden-print" role="complementary">
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="#intralinks" data-toggle="tab">Intralinks</a></li>
@@ -76,7 +76,7 @@ $settings = $db->getSettings();
 				</ul>
 			</div>				
 		</div>		
-		<div class="col-lg-10" role="main">		
+		<div id="maincontent" class="col-lg-10" role="main">		
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="intralinks">
 					<?php include_once "views/intralinks/intralinks_main.php"; ?>						

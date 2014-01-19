@@ -17,4 +17,18 @@ $(document).ready(function() {
 		});			
 		return false;
 	});	
+	
+	//toggle leftmenu
+	var collapsed = false;
+	$('#showMenu').click(function() {
+		if(!collapsed){
+			$('#leftmenu').hide();
+			$('#maincontent').css({width: '100%'});
+		} else {
+			$('#maincontent').css({width: ''});
+			$('#leftmenu').show();
+			//
+		}
+		collapsed = !collapsed;
+	});		
 });
