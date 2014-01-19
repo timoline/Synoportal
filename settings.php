@@ -51,7 +51,7 @@
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->			
 				
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
