@@ -19,7 +19,7 @@
 	<!-- js -->
 	<script src="assets/js/jquery.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
-	<script src="assets/js/index.js" type="text/javascript"></script>	
+	<script src="assets/js/script.js" type="text/javascript"></script>	
 
 	<!-- fav and touch icons -->
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">	
