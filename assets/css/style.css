@@ -1,10 +1,11 @@
 /* My style css */
 /* Karla,Exo,Coda,Voces,Droid Sans,Roboto   */
 @import "http://fonts.googleapis.com/css?family=Roboto";
-/* When using the navbar-top-fixed */ 
+
 body {
 	background-color: #FFFFFF;	
 	font-family: 'Roboto','Arial Narrow',sans-serif;
+	margin-top:60px;
 }
 
 .navbar {
