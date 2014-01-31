@@ -66,20 +66,19 @@
 	<div id="containerSettings">
 		<div class="row">
 			<form class="form-horizontal">	
-			<div class="col-lg-2 well" role="menu">
-				<div class="bs-sidebar hidden-print" role="complementary">
-					<ul class="nav nav-pills nav-stacked">
+			<div id="leftmenu" role="menu">
+				<div class="col-sm-3 col-md-2 sidebar" role="complementary">
+					<ul class="nav nav-sidebar">
 						<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
 						<li><a href="#settingsUpdates" data-toggle="tab">Change password</a></li>										
 					</ul>
-				</div>
-				<br>
-				<div class="btn-group">
-					<button type="submit" class="btn btn-primary" id="saveSettings">Save</button>
-					<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
+					<div class="btn-group">
+						<button type="submit" class="btn btn-primary" id="saveSettings">Save</button>
+						<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
+					</div>					
 				</div>					
 			</div>		
-			<div class="col-lg-10" role="main">		
+		<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">	
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="settingsGeneral">
 							<div id="ConfigContent" style="display: block;">

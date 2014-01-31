@@ -68,15 +68,15 @@ $settings = $db->getSettings();
 <!-- *** CONTENT ************************************************************ -->	
 <div id="containerSettings">
 	<div class="row">
-		<div id="leftmenu" class="col-lg-2 well" role="menu">
-			<div class="bs-sidebar hidden-print" role="complementary">
-				<ul class="nav nav-pills nav-stacked">
+		<div id="leftmenu" role="menu">
+			<div class="col-sm-3 col-md-2 sidebar" role="complementary">
+				<ul class="nav nav-sidebar">
 					<li class="active"><a href="#intralinks" data-toggle="tab">Intralinks</a></li>
 					<li><a href="#favorites" data-toggle="tab">Favorites</a></li>						
 				</ul>
 			</div>				
 		</div>		
-		<div id="maincontent" class="col-lg-10" role="main">		
+		<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">			
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="intralinks">
 					<?php include_once "views/intralinks/intralinks_main.php"; ?>						
