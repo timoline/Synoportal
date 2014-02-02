@@ -50,8 +50,9 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 								<div><input class="form-control" type="text" name="user" placeholder="Username" required autofocus></div>
 								<div><input class="form-control" type="password" name="pass" placeholder="Password" required></div>
 								<div>
+									</br>
 									<input type="hidden" name="login" value="1" />
-									<input class="btn btn-primary btn-block" id="loginSubmit" type="submit" value="Log in"/>
+									<input class="btn btn-success btn-block" id="loginSubmit" type="submit" value="Login"/>
 								</div>
 							</form>
 						</div>
