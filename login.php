@@ -25,10 +25,10 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	<!--   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 			  <span class="sr-only">Toggle navigation</span>
 			  <span class="icon-bar"></span>
-			</button>
+			</button> -->
 			<a class="navbar-brand" href="#">SynoPortal</a>
 		</div>
 	 </div>
@@ -41,7 +41,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 				<p>Username and/or password is incorrect</p>
 				</div>
 			<?php } ?>
-				<div class="col-md-4 col-md-offset-4">
+				<div class="col-sm-4 col-sm-offset-4">
 
 					<div class="panel panel-default panel-margin" >
 						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Authentication</div>
