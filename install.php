@@ -164,7 +164,7 @@
 								<div><input class="form-control" type='text' name='db_user' placeholder="Database user" required></div>
 								<div><input class="form-control" type='text' name='db_pass' placeholder="Database password" ></div>
 								</br>
-								<div><input class="btn btn-success btn-block" type='submit' value='Next'/></div>
+								<div><input class="btn btn-lg btn-success btn-block" type='submit' value='Next'/></div>
 							</form>
 						</div>
 					</div>

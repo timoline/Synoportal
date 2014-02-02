@@ -52,7 +52,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 								<div>
 									</br>
 									<input type="hidden" name="login" value="1" />
-									<input class="btn btn-success btn-block" id="loginSubmit" type="submit" value="Login"/>
+									<input class="btn btn-lg btn-success btn-block" id="loginSubmit" type="submit" value="Login"/>
 								</div>
 							</form>
 						</div>
