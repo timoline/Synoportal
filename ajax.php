@@ -34,11 +34,8 @@ if(isset($_SESSION['user_id']) && $_SESSION['user_id'] != false)
 		if($password != "" && $confirmpassword != "" && $password == $confirmpassword)
 		{
 			$db->updateLogin(sha1($password));
-			echo '{"ok": 1, "msglabel":"Saving settings", "msg":"Settings are successfully saved"}';	
 		}
-		else {
-			echo '{"ok": 1, "msglabel":"Error saving settings", "msg":"Passwords do not match"}';	
-		}
+		echo '{"ok": 1, "msglabel":"Saving settings", "msg":"Settings are successfully saved"}';	
 		
 		
 		
