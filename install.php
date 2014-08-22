@@ -9,9 +9,18 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		
+		<meta name="application-name" content="Synoportal">
+		<meta name="description" content="Web portal for the Synology NAS">
+		<meta name="author" content="Timoline">
+		
+		<!-- Mobile settings -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+		
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 		<title>SynoPortal - Install</title>
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	
 		<!-- css -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
@@ -59,38 +68,39 @@
 					  `url` varchar(100) NOT NULL,
 					  `title` varchar(30) NOT NULL,
 					  `description` varchar(50) NOT NULL,
-					  `ordering` int(11) NOT NULL,
 					  PRIMARY KEY (`id`)
 					) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
-					INSERT INTO `".$db_name."`. `intralinks` (`id`, `url`, `title`, `description`, `ordering`) VALUES
-					(1, 'http://diskstation:8000', 'Download Station', 'Download Station', 0),
-					(2, 'http://diskstation:5000', 'Disk Station Manager', 'Disk Station Manager', 1),
-					(3, 'http://diskstation:8800', 'Audio Station', 'Audio Station', 2),
-					(4, 'http://diskstation:7000', 'File Station', 'File Station', 3),
-					(5, 'http://diskstation/photo', 'Photo Station', 'Photo Station', 4);				
+					INSERT INTO `".$db_name."`. `intralinks` (`id`, `url`, `title`, `description`) VALUES
+					(1, 'http://diskstation:8000', 'Download Station', 'Download Station'),
+					(2, 'http://diskstation:5000', 'Disk Station Manager', 'Disk Station Manager'),
+					(3, 'http://diskstation:8800', 'Audio Station', 'Audio Station'),
+					(4, 'http://diskstation:7000', 'File Station', 'File Station'),
+					(5, 'http://diskstation/photo', 'Photo Station', 'Photo Station');				
 					
 					CREATE TABLE IF NOT EXISTS `".$db_name."`. `favorites` (
 					  `id` int(11) NOT NULL AUTO_INCREMENT,
 					  `url` varchar(100) NOT NULL,
 					  `title` varchar(30) NOT NULL,
 					  `description` varchar(50) NOT NULL,
-					  `ordering` int(11) NOT NULL,
 					  PRIMARY KEY (`id`)
 					) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;	
 
-					INSERT INTO `".$db_name."`. `favorites` (`id`, `url`, `title`, `description`, `ordering`) VALUES
-					(1, 'http://www.upc.nl/televisie/tv-zenders-horizon/', 'TV Kanalen', 'Horizon TV Kanalen', 0);
+					INSERT INTO `".$db_name."`. `favorites` (`id`, `url`, `title`, `description`) VALUES
+					(1, 'http://www.upc.nl/televisie/tv-zenders-horizon/', 'TV Kanalen', 'Horizon TV Kanalen');
 					
 					CREATE TABLE IF NOT EXISTS `".$db_name."`. `users` (
 					  `id` int(11) NOT NULL AUTO_INCREMENT,
-					  `username` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-					  `password` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+					  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+					  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+					  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+					  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+					  `created_at` datetime DEFAULT NULL,
 					  PRIMARY KEY (`id`)
 					) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 					
-					INSERT INTO `".$db_name."`. `users` (`id`, `username`, `password`) VALUES
-					(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');	
+					INSERT INTO `".$db_name."`. `users` (`id`, `username`, `password`, `name`, `email`, `created_at`) VALUES
+					(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997','Administrator','','2014-07-27 09:20:51');	
 
 					CREATE TABLE IF NOT EXISTS `".$db_name."`. `settings` (
 					  `key` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -164,7 +174,7 @@
 								<div><input class="form-control" type='text' name='db_user' placeholder="Database user" required></div>
 								<div><input class="form-control" type='text' name='db_pass' placeholder="Database password" ></div>
 								</br>
-								<div><input class="btn btn-lg btn-success btn-block" type='submit' value='Next'/></div>
+								<div><input class="btn btn-lg btn-primary btn-block" type='submit' value='Next'/></div>
 							</form>
 						</div>
 					</div>

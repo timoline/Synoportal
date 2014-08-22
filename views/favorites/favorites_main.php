@@ -6,28 +6,14 @@
 		</div>		
 	</div>
 </div>
-
-
+</br>
 <?php
 $tablename = "favorites";
-$num_rows = $db->countTableData($tablename);
-
-$pages = new Paginator;
-$pages->shownextprev	= 1;//show next prev after x pages
-$pages->default_ipp		= $settings['ipp'];
-$pages->ipp_array 		= array(5,10,15,20);
-$pages->items_total 	= $num_rows[0]->c;
-$pages->paginate(); 
- 
-$rows = $db->getTableData($tablename, $pages->getStartpage(), $pages->items_per_page);
+$rows = $db->getTableData($tablename);
 ?>
-<div class="form-inline toolbox-top clearfix">
-	<div class="pull-left toolbox-length"><?php echo $pages->display_items_per_page();?>
-	<span class="help-inline">records per page</span></div>
-	<div><?php echo $pages->display_pages();?></div>	
-</div>
+
 <!-- table-bordered table-striped table-condensed -->
-<table class="table datatable table-hover" id="list">
+<table class="table table-hover" id="dt_favorites">
 <thead>
 	<tr>
 		<th>Link</th>
@@ -45,6 +31,3 @@ $rows = $db->getTableData($tablename, $pages->getStartpage(), $pages->items_per_
 <?php endforeach;?> 
 </tbody>
 </table>
-<div class="toolbox-info clearfix">
-	<div class="pull-left"><?php echo $pages->getPaginationSummary();?></div>  
-</div> 

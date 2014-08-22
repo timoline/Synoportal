@@ -24,4 +24,10 @@ $(document).ready(function() {
 		});			
 		return false;
 	});	
+	
+	//Go to Specific Tab on Page Reload
+		var hash = location.hash
+	  , hashPieces = hash.split('?')
+	  , activeTab = $('[href=' + hashPieces[0] + ']');
+	activeTab && activeTab.tab('show');		
 });

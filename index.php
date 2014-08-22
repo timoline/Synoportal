@@ -15,33 +15,53 @@
 	<!-- css -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
+	<link href="assets/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">		
 	
 	<!-- js -->
 	<script src="assets/js/jquery.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.dataTables.js" type="text/javascript"></script>
+	<script src="assets/js/dataTables.bootstrap.js" type="text/javascript"></script>	
 	<script src="assets/js/script.js" type="text/javascript"></script>	
 
 	<!-- fav and touch icons -->
-	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">	
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">	
 </head>
 <body>
 
 <?php	
-include "inc/settings.inc.php";	
-include "classes/database.class.php";
-include "classes/generic.class.php";	
-include "classes/paginator.class.php";	
-include "inc/session.inc.php";	
-
-$db = new Database($config);
-$gen = new Generic($config);	
-$settings = $db->getSettings();
+	include "inc/settings.inc.php";	
+	include "classes/database.class.php";
+	include "classes/generic.class.php";	
+	#include "classes/paginator.class.php";	
+	include "inc/session.inc.php";	
+	
+	$db = new Database($config);
+	$gen = new Generic($config);	
+	$settings = $db->getSettings();
 ?>
-
-<!-- *** NAVBAR ************************************************************ -->				
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
+		
+<!-- *** MODAL ************************************************************ -->	
+	<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title" id="messageLabel"></h4>
+		  </div>
+		  <div class="modal-body">
+			<div id="message"></div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->			
+<!-- *** NAVBAR ************************************************************ -->					
+<nav class="navbar navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->	
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -49,18 +69,19 @@ $settings = $db->getSettings();
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a id="showMenu" class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
+			<a id="showMenu" class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>			
 		</div>
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"></i> <?php echo ($_SESSION['username']);?> <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="settings.php">Settings</a></li>
+					 	<li><a href="settings.php#settingsAccount"><i class="glyphicon glyphicon-lock"></i> Change password</a></li>						
+						<li><a href="settings.php"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
 						<li class="divider"></li>
-						<li><a href="?logout=1">Logout</a></li>
+						<li><a href="?logout=1"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -73,28 +94,29 @@ $settings = $db->getSettings();
 		<div id="leftmenu" role="menu">
 			<div class="col-sm-3 col-md-2 sidebar" role="complementary">
 				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#intralinks" data-toggle="tab">Intralinks</a></li>
-					<li><a href="#favorites" data-toggle="tab">Favorites</a></li>						
+					<li class="active"><a href="#intralinks" data-toggle="tab"><span class="glyphicon glyphicon-tag"></span> Intralinks</a></li>				
+					<li><a href="#favorites" data-toggle="tab"><span class="glyphicon glyphicon-bookmark"></span> Favorites</a></li>				
 				</ul>
 			</div>				
 		</div>		
-		<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">			
+
+		<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">		
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="intralinks">
 					<?php include_once "views/intralinks/intralinks_main.php"; ?>						
-				</div>
+				</div>				
 				<div class="tab-pane fade" id="favorites" >
 					<?php include_once "views/favorites/favorites_main.php"; ?>	
-				</div>							
+				</div>		
 			</div>									
 		</div>	
 	</div>
 </div>
 <!-- *** FOOTER ************************************************************ -->	
 <div class="footer">
-<footer>
-	<div class="copyright"><p><?php echo $settings['footer'];?></p></div>
-</footer>
+	<footer>
+		<div class="copyright"><p><?php echo $settings['footer'];?></p></div>
+	</footer>
 </div>		
 </body>
 </html>

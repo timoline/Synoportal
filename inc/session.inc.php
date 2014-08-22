@@ -13,14 +13,22 @@ if (isset($_POST['login']) && $_POST['login'] == 1) {
 	} else {
 		$_SESSION['user_id'] = false;
 	}
+	
+	if ($u) {
+		$_SESSION['username'] = $u;
+	} else {
+		$_SESSION['username'] = false;
+	}	
 }
 
 if (isset($_GET['logout']) && $_GET['logout'] == 1) {
 		unset($_SESSION['user_id']);
+		unset($_SESSION['username']);
 }
 
 if (!isset($_SESSION['user_id']) || !$_SESSION['user_id']) {
 	header("Location: login.php");
 	exit;
 }
+
 ?>

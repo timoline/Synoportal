@@ -98,14 +98,15 @@ class Database {
 	
 	/**
 	* Count data
-	*/
+
     public function countTableData($tablename) {
         try {
             $sth = $this->_db->prepare("
             SELECT
             	COUNT(*) as c
             FROM 
-            	$tablename");
+            	$tablename
+			");
       			
             $sth->setFetchMode(PDO::FETCH_ASSOC);
             $sth->execute();
@@ -116,21 +117,18 @@ class Database {
             $this->printErrorMessage($e->getMessage());
         }
     }
-	
+	*/
 	/**
 	* Get data
 	*/
-    public function getTableData($tablename, $start, $limit) {
+    public function getTableData($tablename) {
         try {
             $sth = $this->_db->prepare("
             SELECT
             	*
             FROM 
             	$tablename
-			ORDER BY
-            	ordering ASC 
-			LIMIT 
-				$start, $limit");
+			");
 	         			
             $sth->setFetchMode(PDO::FETCH_ASSOC);
             $sth->execute();

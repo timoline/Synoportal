@@ -12,16 +12,24 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		
+		<meta name="application-name" content="Synoportal">
+		<meta name="description" content="Web portal for the Synology NAS">
+		<meta name="author" content="Timoline">
+		
+		<!-- Mobile settings -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+	
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 		<title>SynoPortal - Login</title>
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<!-- css -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	</head>
 	<body class="login">
 	
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-fixed-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -52,7 +60,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 								<div>
 									</br>
 									<input type="hidden" name="login" value="1" />
-									<input class="btn btn-lg btn-success btn-block" id="loginSubmit" type="submit" value="Login"/>
+									<input class="btn btn-lg btn-primary btn-block" id="loginSubmit" type="submit" value="Login"/>
 								</div>
 							</form>
 						</div>

@@ -46,23 +46,23 @@
 			
 	<!-- Modal -->
 	<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h4 class="modal-title" id="messageLabel"></h4>
-		  </div>
-		  <div class="modal-body">
-			<div id="message"></div>
-		  </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		  </div>
-		</div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="messageLabel"></h4>
+				</div>
+				<div class="modal-body">
+					<div id="message"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->			
 				
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-fixed-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -72,37 +72,37 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?php echo $settings['sitename'];?></a>
+			<a class="navbar-brand" href="index.php"><?php echo $settings['sitename'];?></a>
 		</div>
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ($_SESSION['username']);?> <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="?logout=1">Logout</a></li>
+						<li><a href="?logout=1"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
 					</ul>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->		
-	 </div>
+	</div>
 </nav>
 	<div id="containerSettings">
 		<div class="row">
 			<form class="form-horizontal">	
-			<div id="leftmenu" role="menu">
-				<div class="col-sm-3 col-md-2 sidebar" role="complementary">
-					<ul class="nav nav-sidebar">
-						<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
-						<li><a href="#settingsUpdates" data-toggle="tab">Change password</a></li>										
-					</ul>
-					<div class="btn-group">
-						<button type="submit" class="btn btn-primary" id="saveSettings">Save</button>
-						<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
+				<div id="leftmenu" role="menu">
+					<div class="col-sm-3 col-md-2 sidebar" role="complementary">
+						<ul class="nav nav-sidebar">
+							<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
+							<li><a href="#settingsAccount" data-toggle="tab">Account</a></li>										
+						</ul>
+						<div class="btn-group">
+							<button type="submit" class="btn btn-primary" id="saveSettings">Save</button>
+							<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
+						</div>					
 					</div>					
-				</div>					
-			</div>		
-		<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">	
+				</div>		
+				<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">	
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="settingsGeneral">
 							<div id="ConfigContent" style="display: block;">
@@ -133,7 +133,7 @@
 								</div>									
 							</fieldset>							
 						</div>
-						<div class="tab-pane fade" id="settingsUpdates" >
+						<div class="tab-pane fade" id="settingsAccount" >
 							<div id="ConfigContent" style="display: block;">
 								<div class="config-header clearfix">
 									<div id="ConfigTitle" class="pull-left config-title">
@@ -156,11 +156,11 @@
 								</div>	
 							</fieldset>
 						</div>
-						</div>
-					</div>		
-				</form>								
-			</div>	
-		</div>
+					</div>
+				</div>		
+			</form>								
+		</div>	
+	</div>
 <!-- *** FOOTER ************************************************************ -->	
 <div class="footer">
 <footer>

@@ -18,21 +18,24 @@ class Generic {
 	* @access	public
 	* @return	string
 	* @since	0.1
-	*/
-	public function getPageurl ($pagelink) {
+	
+	public function getPageurl ($pagelink) 
+	{
 		$pageurl = "views/".$pagelink."/".$pagelink."_main.php";
 		return $pageurl;
-		}
-
-	public function redirect ($page) {
+	}
+*/
+	public function redirect ($page) 
+	{
 		header ("Location: ".$page);
 		exit();
-		}	
+	}	
 
     /**
      * Create selector
      */
-	public function selector($name, $selected, $options){
+	public function selector($name, $selected, $options)
+	{
 		$html = "<select class=\"form-control\" name='".$name."'>\n";
 		
 		foreach($options as $k => $v) 
@@ -48,20 +51,24 @@ class Generic {
    /**
      * get views from vieuws folder
      */		
-	public function getViews($dir) {
-	$subfolders = scandir($dir);
-		foreach($subfolders as $folder){
-			if($folder != '.' && $folder != '..'){
-				$folders[$folder] = $folder;   
+	public function getViews($dir) 
+	{
+		$subfolders = scandir($dir);
+			foreach($subfolders as $folder)
+			{
+				if($folder != '.' && $folder != '..')
+				{
+					$folders[$folder] = $folder;   
+				}
 			}
-		}
-	return $folders;
+		return $folders;
 	}
 	
    /**
      * Edit config file
      */		 
-	public function changeConfig($key, $value){
+	public function changeConfig($key, $value)
+	{
         $lines = file(BASE_PATH.'/inc/settings.inc.php', FILE_IGNORE_NEW_LINES);
         $count = count($lines);
         for($i=0; $i < $count; $i++)
@@ -78,7 +85,7 @@ class Generic {
             }
         }	
 	}	 
-     
+  
 }
 
 ?>
