@@ -97,7 +97,7 @@
 							<li><a href="#settingsAccount" data-toggle="tab">Account</a></li>										
 						</ul>
 						<div class="btn-group">
-							<button type="submit" class="btn btn-primary" id="saveSettings">Save</button>
+							<button type="submit" class="btn btn-success" id="saveSettings">Save</button>
 							<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
 						</div>					
 					</div>					
