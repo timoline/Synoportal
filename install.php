@@ -181,14 +181,24 @@
 					<div class="panel panel-default panel-margin" >		
 						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Database information</div>							
 						<div class="panel-body">
-							<form class="form-signin" action='install.php?step=2' method='POST' role="form">
-								<div><input class="form-control" type='text' name='db_host' placeholder="Database host" required autofocus></div>
-								<div><input class="form-control" type='text' name='db_user' placeholder="Database user" required></div>
-								<div><input class="form-control" type='text' name='db_pass' placeholder="Database password" ></div>
-								<div><input class="form-control" type='text' name='db_name' placeholder="Database name" required></div>										
-								</br>
-								<div class="pull-right"><input class="btn btn-success" type='submit' value='Next'/></div>
-							</form>
+							
+								<form class="form-signin" action='install.php?step=2' method='POST' role="form">
+									<div class="form-group">
+										<input class="form-control" type='text' name='db_host' placeholder="Database host" required autofocus>
+									</div>
+									<div class="form-group">
+										<input class="form-control" type='text' name='db_user' placeholder="Database user" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control" type='text' name='db_pass' placeholder="Database password" >
+									</div>
+									<div class="form-group">
+										<input class="form-control" type='text' name='db_name' placeholder="Database name" required>
+									</div>										
+									</br>
+									<div class="pull-right"><input class="btn btn-success" type='submit' value='Next'/></div>
+								</form>
+							
 						</div>
 					</div>
 				</div>
