@@ -177,7 +177,7 @@
 				<h4 class="alert-heading">Precheck</h4>
 				<p>Precheck succeeded</p>
 				</div>
-				<div class="col-sm-4 col-sm-offset-4">
+				<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default panel-margin" >		
 						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Database information</div>							
 						<div class="panel-body">

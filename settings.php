@@ -114,20 +114,20 @@
 							</div>
 							<fieldset class="fieldset">
 								<div class="form-group">
-									<label for="sitename" class="col-lg-2 control-label">Sitename</label>
-									<div class="col-lg-6">
+									<label for="sitename" class="col-md-2 control-label">Sitename</label>
+									<div class="col-md-6">
 										<input type="text" class="form-control" name="sitename" value="<?php echo $settings['sitename'];?>" placeholder="SynoPortal"/>
 									</div>					
 								</div>	
 								<div class="form-group" >
-									<label for="footer" class="col-lg-2 control-label">Footer</label>
-									<div class="col-lg-6">
+									<label for="footer" class="col-md-2 control-label">Footer</label>
+									<div class="col-md-6">
 										<input type="text" class="form-control" name="footer" value="<?php echo $settings['footer'];?>" placeholder="&copy; 1995-2013 SynoPortal"/>
 									</div>					
 								</div>		
 								<div class="form-group" >
-									<label for="ipp" class="col-lg-2 control-label">Items per page</label>
-									<div class="col-lg-2">
+									<label for="ipp" class="col-md-2 control-label">Items per page</label>
+									<div class="col-md-2">
 										<?php echo $ippSelect; ?>
 									</div>					
 								</div>									
@@ -143,14 +143,14 @@
 							</div>
 							<fieldset class="fieldset">
 								<div class="form-group">
-									<label for="password" class="col-lg-2 control-label">Password</label>
-									<div class="col-lg-6">
+									<label for="password" class="col-md-2 control-label">Password</label>
+									<div class="col-md-6">
 										<input type="password" class="form-control" name="password" value=""/>
 									</div>					
 								</div>	
 								<div class="form-group" >
-									<label for="confirmpassword" class="col-lg-2 control-label">Confirm Password</label>
-									<div class="col-lg-6">
+									<label for="confirmpassword" class="col-md-2 control-label">Confirm Password</label>
+									<div class="col-md-6">
 										<input type="password" class="form-control" name="confirmpassword" value=""/>
 									</div>					
 								</div>	
