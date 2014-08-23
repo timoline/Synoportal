@@ -28,7 +28,7 @@
 	<body class="install">
 	
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="container">
+	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 	   <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -39,7 +39,7 @@
 		</div>
 	 </div>
 </nav>
-	<div id="container">
+	<div id="container-fluid">
 		<div id="installForm">
 		
 <?php
@@ -116,10 +116,23 @@
 					");
 					if($succes == 1)
 					{
-						echo "<div class=\"alert alert-success\">";
-						echo "<h4 class=\"alert-heading\">Installation succeeded. </h4>";			
-						echo "<p>Remove <b>install.php</b><br></p>";
-						echo "<p>Default username/password is <b>admin</b>/<b>admin</b></p></div>";
+					?>
+					<div class="container-fluid">
+						<div class="alert alert-success">
+							<h4 class="alert-heading">Installation succeeded. </h4>	
+							<p>Remove <b>install.php</b><br></p>
+							<p>Default username/password is <b>admin</b>/<b>admin</b></p>
+						</div>
+									
+						<div>
+							<form class="form-finished" action='index.php' method='POST' role="form">
+								<div>
+									<input class="btn btn-success" type='submit' value='Finished'/>
+								</div>
+							</form>
+						</div>
+					</div>
+					<?php	
 					}					
 
 				} catch (PDOException $e) {
@@ -159,7 +172,7 @@
 		
 		if($ok){
 		?>
-			<div class="row">
+			<div class="container-fluid">
 				<div class="alert alert-success">
 				<h4 class="alert-heading">Precheck</h4>
 				<p>Precheck succeeded</p>
@@ -174,7 +187,7 @@
 								<div><input class="form-control" type='text' name='db_pass' placeholder="Database password" ></div>
 								<div><input class="form-control" type='text' name='db_name' placeholder="Database name" required></div>										
 								</br>
-								<div><input class="btn btn-lg btn-primary btn-block" type='submit' value='Next'/></div>
+								<div class="pull-right"><input class="btn btn-success" type='submit' value='Next'/></div>
 							</form>
 						</div>
 					</div>
