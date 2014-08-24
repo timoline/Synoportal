@@ -59,32 +59,6 @@ $(document).ready(function() {
 		$('.dataTables_filter input').attr("placeholder", "Search");
 	});	
 	
-	$(document).ready(function(){
-		$('#dt_meterstanden').dataTable({
-		"bStateSave": true,
-        "sDom": '<<"dt_floatleft"f><"dt_floatright"p>rt<"dt_floatleft"i>>',
-		"oLanguage": { "sSearch": "" }
-		});
-		
-		$('.dataTables_filter input').attr("placeholder", "Search");
-	});	
-	
-	$(document).ready(function(){
-		$('#dt_adressen').dataTable({
-		"bStateSave": true,
-        "sDom": '<<"dt_floatleft"f><"dt_floatright"p>rt<"dt_floatleft"i>>',
-		"oLanguage": { "sSearch": "" }
-		});
-		
-		$('.dataTables_filter input').attr("placeholder", "Search");
-	});		
-	
-	$(document).ready(function(){
-		$('#dt_zon').dataTable({
-		"bStateSave": true,
-        "sDom": '<<"dt_floatleft"f><"dt_floatright"p>rt<"dt_floatleft"i>>',
-		"filter":   false
-		});
-	});		
+
 		
 });
