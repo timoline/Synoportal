@@ -4,7 +4,7 @@
 		<?php echo $title;?>
 	</h2>		
 </div>
-</br>
+
 <?php
 $tablename = "favorites";
 $rows = $db->getTableData($tablename);

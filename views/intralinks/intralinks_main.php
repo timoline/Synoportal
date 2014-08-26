@@ -4,7 +4,7 @@
 		<?php echo $title;?>
 	</h2>
 </div>
-</br>
+
 <?php
 $tablename = "intralinks";
 $rows = $db->getTableData($tablename);
