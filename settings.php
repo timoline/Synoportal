@@ -105,50 +105,10 @@
 				<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">	
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="settingsGeneral">
-							<div id="ConfigContent" style="display: block;">
-								<h2 class="page-header">General</h2>
-							</div>
-							<fieldset class="fieldset">
-								<div class="form-group">
-									<label for="sitename" class="col-md-3 control-label">Sitename</label>
-									<div class="col-md-9">
-										<input type="text" class="form-control" name="sitename" value="<?php echo $settings['sitename'];?>" placeholder="SynoPortal"/>
-									</div>					
-								</div>	
-								<div class="form-group" >
-									<label for="footer" class="col-md-3 control-label">Footer</label>
-									<div class="col-md-9">
-										<input type="text" class="form-control" name="footer" value="<?php echo $settings['footer'];?>" placeholder="&copy; 1995-2013 SynoPortal"/>
-									</div>					
-								</div>		
-								<div class="form-group" >
-									<label for="ipp" class="col-md-3 control-label">Items per page</label>
-									<div class="col-md-9">
-										<?php echo $ippSelect; ?>
-									</div>					
-								</div>									
-							</fieldset>							
+							<?php include_once "admin/_general.php"; ?>							
 						</div>
 						<div class="tab-pane fade" id="settingsAccount" >
-							<div id="ConfigContent" style="display: block;">
-								<div class="config-header clearfix">
-									<h2 class="page-header">Change password</h2>
-								</div>
-							</div>
-							<fieldset class="fieldset">
-								<div class="form-group">
-									<label for="password" class="col-md-3 control-label">Password</label>
-									<div class="col-md-9">
-										<input type="password" class="form-control" name="password" value=""/>
-									</div>					
-								</div>	
-								<div class="form-group" >
-									<label for="confirmpassword" class="col-md-3 control-label">Confirm Password</label>
-									<div class="col-md-9">
-										<input type="password" class="form-control" name="confirmpassword" value=""/>
-									</div>					
-								</div>	
-							</fieldset>
+							<?php include_once "admin/_account.php"; ?>	
 						</div>
 					</div>
 				</div>		
