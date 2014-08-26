@@ -1,10 +1,8 @@
 <?php $title = "Favorites" ;?>
 <div id="ConfigContent" style="display: block;">
-	<div class="config-header clearfix">
-		<div id="ConfigTitle" class="pull-left config-title">
-			<?php echo $title;?>
-		</div>		
-	</div>
+	<h2 class="page-header">
+		<?php echo $title;?>
+	</h2>		
 </div>
 </br>
 <?php
@@ -12,6 +10,7 @@ $tablename = "favorites";
 $rows = $db->getTableData($tablename);
 ?>
 
+<div class="table-responsive">
 <!-- table-bordered table-striped table-condensed -->
 <table class="table table-hover" id="dt_favorites">
 <thead>
@@ -31,3 +30,4 @@ $rows = $db->getTableData($tablename);
 <?php endforeach;?> 
 </tbody>
 </table>
+</div>

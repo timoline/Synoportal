@@ -106,11 +106,7 @@
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="settingsGeneral">
 							<div id="ConfigContent" style="display: block;">
-								<div class="config-header clearfix">
-									<div id="ConfigTitle" class="pull-left config-title">
-										General
-									</div>
-								</div>
+								<h2 class="page-header">General</h2>
 							</div>
 							<fieldset class="fieldset">
 								<div class="form-group">
@@ -136,9 +132,7 @@
 						<div class="tab-pane fade" id="settingsAccount" >
 							<div id="ConfigContent" style="display: block;">
 								<div class="config-header clearfix">
-									<div id="ConfigTitle" class="pull-left config-title">
-										Change password
-									</div>
+									<h2 class="page-header">Change password</h2>
 								</div>
 							</div>
 							<fieldset class="fieldset">
