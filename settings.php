@@ -41,27 +41,12 @@
 	
 	<!-- fav and touch icons -->
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">		
-	</head>
-	<body class="settings">
-			
-	<!-- Modal -->
-	<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="messageLabel"></h4>
-				</div>
-				<div class="modal-body">
-					<div id="message"></div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->			
-				
+</head>
+<body class="settings">
+		
+<!-- Modal -->
+<?php include_once "admin/_modal.php"; ?>	
+	
 <nav class="navbar navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -87,34 +72,34 @@
 		</div><!-- /.navbar-collapse -->		
 	</div>
 </nav>
-	<div id="containerSettings">
-		<div class="row">
-			<form class="form-horizontal">	
-				<div id="leftmenu" role="menu">
-					<div class="col-sm-3 col-md-2 sidebar" role="complementary">
-						<ul class="nav nav-sidebar">
-							<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
-							<li><a href="#settingsAccount" data-toggle="tab">Account</a></li>										
-						</ul>
-						<div class="btn-group">
-							<button type="submit" class="btn btn-success" id="saveSettings">Save</button>
-							<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
-						</div>					
+<div id="containerSettings">
+	<div class="row">
+		<form class="form-horizontal">	
+			<div id="leftmenu" role="menu">
+				<div class="col-sm-3 col-md-2 sidebar" role="complementary">
+					<ul class="nav nav-sidebar">
+						<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
+						<li><a href="#settingsAccount" data-toggle="tab">Account</a></li>										
+					</ul>
+					<div class="btn-group">
+						<button type="submit" class="btn btn-success" id="saveSettings">Save</button>
+						<a type="cancel" class="btn btn-default" href="index.php">Close</a>							
 					</div>					
-				</div>		
-				<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">	
-					<div class="tab-content">
-						<div class="tab-pane fade in active" id="settingsGeneral">
-							<?php include_once "admin/_general.php"; ?>							
-						</div>
-						<div class="tab-pane fade" id="settingsAccount" >
-							<?php include_once "admin/_account.php"; ?>	
-						</div>
+				</div>					
+			</div>		
+			<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">	
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="settingsGeneral">
+						<?php include_once "admin/_general.php"; ?>							
 					</div>
-				</div>		
-			</form>								
-		</div>	
-	</div>
+					<div class="tab-pane fade" id="settingsAccount" >
+						<?php include_once "admin/_account.php"; ?>	
+					</div>
+				</div>
+			</div>		
+		</form>								
+	</div>	
+</div>
 <!-- *** FOOTER ************************************************************ -->	
 <div class="footer">
 <footer>
