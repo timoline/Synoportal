@@ -24,7 +24,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 		<title>SynoPortal - Login</title>
 		<!-- css -->
-		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
+		<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">	
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	</head>
 	<body class="login">

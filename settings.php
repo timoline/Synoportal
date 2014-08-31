@@ -32,11 +32,11 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	
 	<!-- css -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
+	<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	<!-- js -->
-	<script src="assets/js/jquery.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.js" type="text/javascript"></script>	
+	<script src="assets/components/jquery/jquery.js" type="text/javascript"></script>
+	<script src="assets/components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>	
 	<script src="assets/js/settings.js" type="text/javascript"></script>
 	
 	<!-- fav and touch icons -->

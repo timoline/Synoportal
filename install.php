@@ -22,7 +22,7 @@
 		<title>SynoPortal - Install</title>
 	
 		<!-- css -->
-		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">	
+		<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	</head>
 	<body class="install">
