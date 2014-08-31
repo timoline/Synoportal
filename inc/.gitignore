@@ -1,4 +1,0 @@
-# Ignore everything in this directory
-settings.inc.php
-# Except this file
-!.gitignore

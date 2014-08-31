@@ -1,0 +1,16 @@
+{
+  "name": "synoportal",
+  "dependencies": {
+    "jquery": "1.9.1",
+    "bootstrap": "~3.2.0",
+	"datatables": "~1.10.2"
+  },
+  "preen": {
+    "jquery": [
+      "dist/jquery.min.js"
+    ],
+    "bootstrap": [
+      "dist/js/bootstrap.min.js"
+    ]
+  }
+}
