@@ -26,6 +26,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 		<!-- css -->
 		<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">	
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
+		<link href="assets/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	</head>
 	<body class="login">
 	
@@ -52,7 +53,7 @@ if(isset($_SESSION['user_id']) && !$_SESSION['user_id'])
 			<div class="col-sm-4 col-sm-offset-4">
 
 				<div class="panel panel-default panel-margin" >
-					<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Authentication</div>
+					<div class="panel-heading"><span class="fa fa-lock"></span> Authentication</div>
 					<div class="panel-body">
 						<form class="form-signin" method="post" action="index.php" role="form">
 							<div><input class="form-control" type="text" name="user" placeholder="Username" required autofocus></div>

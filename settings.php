@@ -34,6 +34,8 @@
 	<!-- css -->
 	<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
+	<link href="assets/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
 	<!-- js -->
 	<script src="assets/components/jquery/jquery.js" type="text/javascript"></script>
 	<script src="assets/components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>	
@@ -63,9 +65,9 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ($_SESSION['username']);?> <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i>  <?php echo ($_SESSION['username']);?> <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="?logout=1"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+						<li><a href="?logout=1"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -78,8 +80,8 @@
 			<div id="leftmenu" role="menu">
 				<div class="col-sm-3 col-md-2 sidebar" role="complementary">
 					<ul class="nav nav-sidebar">
-						<li class="active"><a href="#settingsGeneral" data-toggle="tab">General</a></li>
-						<li><a href="#settingsAccount" data-toggle="tab">Account</a></li>										
+						<li class="active"><a href="#settingsGeneral" data-toggle="tab"><span class="fa fa-cogs fa-fw"></span> General</a></li>
+						<li><a href="#settingsAccount" data-toggle="tab"><span class="fa fa-user fa-fw"></span> Account</a></li>										
 					</ul>
 					<div class="btn-group">
 						<button type="submit" class="btn btn-success" id="saveSettings">Save</button>

@@ -3,7 +3,8 @@
   "dependencies": {
     "jquery": "1.9.1",
     "bootstrap": "~3.2.0",
-	"datatables": "~1.10.2"
+	"datatables": "~1.10.2",
+    "font-awesome": "~4.1.0"	
   },
   "preen": {
     "jquery": [
@@ -11,6 +12,10 @@
     ],
     "bootstrap": [
       "dist/js/bootstrap.min.js"
+    ],
+    "font-awesome": [
+      "css/font-awesome.min.css",
+      "fonts/*"
     ]
   }
 }

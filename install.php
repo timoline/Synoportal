@@ -24,6 +24,7 @@
 		<!-- css -->
 		<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
+		<link href="assets/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">		
 	</head>
 	<body class="install">
 	
@@ -179,7 +180,7 @@
 				</div>
 				<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default panel-margin" >		
-						<div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Database information</div>							
+						<div class="panel-heading"><span class="fa fa-database"></span> Database information</div>							
 						<div class="panel-body">
 							
 								<form class="form-signin" action='install.php?step=2' method='POST' role="form">

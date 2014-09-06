@@ -16,7 +16,7 @@
 	<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 	<link href="assets/components/datatables/examples/resources/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
-
+	<link href="assets/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
 	<!-- js -->
 	<script src="assets/components/jquery/jquery.js" type="text/javascript"></script>
@@ -58,12 +58,12 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"></i> <?php echo ($_SESSION['username']);?> <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"></i><i class="fa fa-user fa-fw"></i>  <?php echo ($_SESSION['username']);?> <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					 	<li><a href="settings.php#settingsAccount"><i class="glyphicon glyphicon-lock"></i> Change password</a></li>						
-						<li><a href="settings.php"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
+					 	<li><a href="settings.php#settingsAccount"><i class="fa fa-lock fa-fw"></i> Change password</a></li>						
+						<li><a href="settings.php"><i class="fa fa-cog fa-fw"></i> Settings</a></li>
 						<li class="divider"></li>
-						<li><a href="?logout=1"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+						<li><a href="?logout=1"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -76,8 +76,8 @@
 		<div id="leftmenu" role="menu">
 			<div class="col-sm-3 col-md-2 sidebar" role="complementary">
 				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#intralinks" data-toggle="tab"><span class="glyphicon glyphicon-tag"></span> Intralinks</a></li>				
-					<li><a href="#favorites" data-toggle="tab"><span class="glyphicon glyphicon-bookmark"></span> Favorites</a></li>				
+					<li class="active"><a href="#intralinks" data-toggle="tab"><span class="fa fa-tags fa-fw"></span> Intralinks</a></li>				
+					<li><a href="#favorites" data-toggle="tab"><span class="fa fa-bookmark fa-fw"></span> Favorites</a></li>				
 				</ul>
 			</div>				
 		</div>		
