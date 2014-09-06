@@ -80,8 +80,8 @@
 			<div id="leftmenu" role="menu">
 				<div class="col-sm-3 col-md-2 sidebar" role="complementary">
 					<ul class="nav nav-sidebar">
-						<li class="active"><a href="#settingsGeneral" data-toggle="tab"><span class="fa fa-cogs fa-fw"></span> General</a></li>
-						<li><a href="#settingsAccount" data-toggle="tab"><span class="fa fa-user fa-fw"></span> Account</a></li>										
+						<li class="active"><a href="#settingsGeneral" data-toggle="tab"><i class="fa fa-cogs fa-fw"></i> General</a></li>
+						<li><a href="#settingsAccount" data-toggle="tab"><i class="fa fa-user fa-fw"></i> Account</a></li>										
 					</ul>
 					<div class="btn-group">
 						<button type="submit" class="btn btn-success" id="saveSettings">Save</button>

@@ -76,8 +76,8 @@
 		<div id="leftmenu" role="menu">
 			<div class="col-sm-3 col-md-2 sidebar" role="complementary">
 				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#intralinks" data-toggle="tab"><span class="fa fa-tags fa-fw"></span> Intralinks</a></li>				
-					<li><a href="#favorites" data-toggle="tab"><span class="fa fa-bookmark fa-fw"></span> Favorites</a></li>				
+					<li class="active"><a href="#intralinks" data-toggle="tab"><i class="fa fa-tags fa-fw"></i> Intralinks</a></li>				
+					<li><a href="#favorites" data-toggle="tab"><i class="fa fa-bookmark fa-fw"></i> Favorites</a></li>				
 				</ul>
 			</div>				
 		</div>		
