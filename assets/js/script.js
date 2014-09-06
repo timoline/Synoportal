@@ -1,23 +1,4 @@
 $(document).ready(function() {
-	$('#saveSettings').click(function(){
-		$.ajax({
-			url: 'ajax.php?a=saveSettings',
-			type: 'POST',
-			dataType: 'json',
-			data: $('#container form').serialize(),
-			success: function( data ) {
-
-				
-					$('#containerinput[type=password]').val('');
-									
-
-				//$('#message').text(data["msg"]);
-						
-			}
-		});			
-		return false;
-	});	
-
 	//toggle leftmenu
 	var collapsed = false;
 	$('#showMenu').click(function() {
@@ -36,8 +17,6 @@ $(document).ready(function() {
 	  , hashPieces = hash.split('?')
 	  , activeTab = $('[href=' + hashPieces[0] + ']');
 	activeTab && activeTab.tab('show');	
-	
-	
 	
 	$(document).ready(function(){
 		$('#dt_intralinks').dataTable({

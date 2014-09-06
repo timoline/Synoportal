@@ -1,8 +1,5 @@
 <?php
 
-?>
-<?php
-
 class Generic {
 
     private $config;
@@ -12,19 +9,6 @@ class Generic {
 	    $this->config = $config;
     }
 
-	/**
-	* Method to get the page url
-	*
-	* @access	public
-	* @return	string
-	* @since	0.1
-	
-	public function getPageurl ($pagelink) 
-	{
-		$pageurl = "views/".$pagelink."/".$pagelink."_main.php";
-		return $pageurl;
-	}
-*/
 	public function redirect ($page) 
 	{
 		header ("Location: ".$page);
