@@ -90,10 +90,10 @@
 			<div id="maincontent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="main">	
 				<div class="tab-content">
 					<div class="tab-pane fade in active" id="settingsGeneral">
-						<?php include_once "admin/_general.php"; ?>							
+						<?php include_once "admin/form.general.php"; ?>							
 					</div>
 					<div class="tab-pane fade" id="settingsAccount" >
-						<?php include_once "admin/_account.php"; ?>	
+						<?php include_once "admin/form.account.php"; ?>	
 					</div>
 				</div>
 			</div>		
