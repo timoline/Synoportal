@@ -37,7 +37,7 @@
 	<link href="assets/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
 	<!-- js -->
-	<script src="assets/components/jquery/jquery.js" type="text/javascript"></script>
+	<script src="assets/components/jquery/dist/jquery.js" type="text/javascript"></script>
 	<script src="assets/components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>	
 	<script src="assets/js/settings.js" type="text/javascript"></script>
 	
