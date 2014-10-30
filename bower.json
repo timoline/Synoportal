@@ -1,7 +1,7 @@
 {
   "name": "synoportal",
   "dependencies": {
-    "jquery": "1.9.1",
+    "jquery": "1.11.1",
     "bootstrap": "~3.3.0",
 	"datatables": "~1.10.2",
     "font-awesome": "~4.2.0"	
