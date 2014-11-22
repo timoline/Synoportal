@@ -25,9 +25,10 @@ $(document).ready(function() {
 		"oLanguage": { "sSearch": "" }
 		});
 		
-		$('.dataTables_filter input').attr("placeholder", "Search");
-	});
-	
+			$('.dataTables_filter input').attr("placeholder", "Search");
+		});
+
+
 	$(document).ready(function(){
 		$('#dt_favorites').dataTable({
 		"bStateSave": true,

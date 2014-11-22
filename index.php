@@ -15,15 +15,17 @@
 	<!-- css -->
 	<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
-	<link href="assets/components/datatables/examples/resources/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" rel="stylesheet" type="text/css">
 	<link href="assets/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
 	<!-- js -->
 	<script src="assets/components/jquery/dist/jquery.js" type="text/javascript"></script>
-	<script src="assets/components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
 	<script src="assets/components/datatables/media/js/jquery.dataTables.js" type="text/javascript"></script>
-	<script src="assets/components/datatables/examples/resources/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>		
+	<script src="//cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>	
+	<script src="assets/components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>	
 	<script src="assets/js/script.js" type="text/javascript"></script>	
+
+
 
 	<!-- fav and touch icons -->
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">	
