@@ -15,7 +15,8 @@
 	<!-- css -->
 	<link href="assets/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">	
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
-	<link href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+	<!--<link href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" rel="stylesheet" type="text/css">-->
+	<link href="//cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="assets/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
 	<!-- js -->
